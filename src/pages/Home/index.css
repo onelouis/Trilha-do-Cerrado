@@ -1,33 +1,39 @@
 .headers{
-    background: red;
     
     width: 100%;
-    position:fixed;
+    
+}
+header{
+    width: 300px;
+    height:calc(100vh - 300px) ;
+    background-image: url('./imagens/image1.png');
 }
 
 .toolbar {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 64px;
+    height: 70px;
 }
 .main {
-    height: 100vh;
+    
+   
     display: flex;
     width: 1440px;
     margin: 0 auto;
 }
 .feed { 
-    background: yellow;
+   
     width: 100%;
     padding: 24px;
 }
 .caixacentral {
-    color: blue;
+    color: white;
     font-family:'Open Sans', 'Helvetica Neue', sans-serif;
     align-items: center;
-    Weight: 600;
+    height: 600;
     Size: 26px;
     line-height:35.41px ;
 
 }
+

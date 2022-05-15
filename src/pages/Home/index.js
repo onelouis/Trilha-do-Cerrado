@@ -1,17 +1,21 @@
 import React from "react";
-import Header from "./components/Header";
+import Header from "./Header";
 import './index.css'
 
 
 function Home () {
     return (
     <div>
+        <div>
         <Header/>
-        <main className="main"> 
-        <div className="feed"> 
-                feed 
         </div>
+        
+        <main className="main"> 
+            <div className="feed"> 
+                feed 
+            </div>
         </main>
+        <footer > footer</footer>
     </div>
     );
 }
