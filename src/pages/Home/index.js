@@ -14,6 +14,7 @@ function Home () {
             <div className="feed"> 
                 feed 
             </div>
+            
         </main>
         <footer > footer</footer>
     </div>
