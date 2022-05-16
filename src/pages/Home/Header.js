@@ -5,7 +5,7 @@ function header() {
     return ( 
         <div>
         <header className="headers">
-            <div className="glass">
+           
                 <div className="toolbar">
                     <nav>
                         <img src="/imagens/logo.png" alt="logo"/>
@@ -19,11 +19,10 @@ function header() {
                         <p> LOGIN</p>
                     </nav>
                 </div>
-            </div> 
+            
             <div className="Titulo texto-central">
-                <p className="p">Caminhos do </p>
-                
-                <p className="p1">Planalto Central</p>
+                <b className="p">Caminhos do </b>
+                <b className="p1">Planalto Central</b>
             </div>   
          </header>
            
