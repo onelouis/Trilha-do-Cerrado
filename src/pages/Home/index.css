@@ -32,7 +32,7 @@ header{
 
 .Titulo{
     display: flex;
-    padding: 100px 25px;
+    padding: 0px 0px;
     font-family: 'Russo One';
     font-style:normal;
     font-weight: 400;
@@ -41,20 +41,35 @@ header{
     position: relative;
     width: 100%;
     height:calc(100vh - 385px) ;
-    top: calc(100vh - 308px) ;
-    margin-top: -630px;
+    top: calc(100vh - 932px)auto ;
+    margin:  auto;
     background-color: rgba(0, 0, 0, 0.221);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(0.8px);
     
 }
 .p{
-    margin: 110px 0px 0px 90px;
+    max-width: 400px;
+    width: 100%;
+    max-height: 100px;
+    height: 100%;
+    margin: 200px 0px 0px 90px;
+    align-items:center ;
+    position: absolute;
+    
 }
 .p1{
     display: flex;
-    margin: 170px 0px 0px -193px;
+    position:relative;
+    font-weight:bold;
+    width: 100%;
+    height: 100%;
+    align-items:center ;
+    max-width: 480px;
+    max-height: 100px;
+    margin: 210px 0px 0px 240px;
     color: #FFD600 ;
+    
 }
 ul {
     list-style-type: none;
@@ -97,7 +112,7 @@ nav{
 
 .feed { 
     display: flex;
-    background-color: #313030;
+    
     width: 100%;
     padding: 24px;
     height: 20vh;
