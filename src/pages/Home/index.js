@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Main from "./Main";
 import './index.css'
 
 
@@ -9,13 +10,8 @@ function Home () {
         <div>
         <Header/>
         </div>
+        <Main />
         
-        <main className="main"> 
-            <div className="feed"> 
-                feed 
-            </div>
-            
-        </main>
         <footer > footer</footer>
     </div>
     );

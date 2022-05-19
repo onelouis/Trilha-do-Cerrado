@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
 
+/* cabeçalho do site*/
 .headers{
     
     width: 100%;
@@ -16,10 +17,11 @@ header{
     background-position: center;
    
 }
-
+/*barra de pesquisa*/
 .toolbar {
     display: flex;
     flex-direction: row;
+    
     width: 100%;
     Top:18px;
     Left:99px;
@@ -29,7 +31,39 @@ header{
     backdrop-filter: blur(0.8px);
     
 }
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content:space-between;
+    align-items: center;
+}
+li{
+    margin: 0 15px;
+}
+img  {
+    position:initial;
+    display: flex;
+    width: 80px;
+    height: calc(100vh -45px);
+    top: 14px;
+    padding: 0;
+    bottom: 10px;
+    margin-left: 60px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    width:  90%;
+    justify-content: space-between;
+    margin: auto 60px;
+    top: 54px;
+    height: 35px;
+    
+}
 
+/*Titulo central do site*/
 .Titulo{
     display: flex;
     padding: 0px 0px;
@@ -71,53 +105,153 @@ header{
     color: #FFD600 ;
     
 }
-ul {
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    justify-content:space-between;
-    align-items: center;
-}
-li{
-    margin: 0 15px;
-}
-img  {
-    position:initial;
-    display: flex;
-    width: 80px;
-    height: calc(100vh -45px);
-    top: 14px;
-    padding: 0;
-    bottom: 10px;
-    margin-left: 60px;
-}
-nav{
-    display: flex;
-    align-items: center;
-    width:  90%;
-    justify-content: space-between;
-    margin: auto 60px;
-    top: 54px;
-    height: 35px;
-    
-}
-
+/*corpo do site*/
 .main {
-    height:calc(100vh - 385px) ;
-    display: flex;
-    margin: 0 auto;
-    background-color: #121212;
-}
-
-.feed { 
-    display: flex;
     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121212;
+   
+}
+.feed{
+    display: flex;
     width: 100%;
-    padding: 24px;
-    height: 20vh;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 53px;
+}
+/*primeiros campos do site*/
+.caixa1 {
+    display: flex;
+    width: 323px;
+    height: 284px;
+    left: 214px;
+    top: 687px;
+    align-items:flex-end;
+    color:#FFD600;
+    padding: 15px;
+    background-color: #323131;
+    margin:25px auto;
+
+}
+.caixa2 {
+    display: flex;
+    width: 323px;
+    height: 284px;
+    left: 214px;
+    top: 687px;
+    color:#000000;
+    align-items:flex-end;
+    margin: auto;
+    padding: 15px;
+    background-color: #FFD600 ;
+    margin:25px auto;
+
+}
+.caixa3 {
+    display: flex;
+    width: 323px;
+    height: 284px;
+    left: 214px;
+    top: 687px;
+    color: #FFD600;
+    align-items:flex-end;
+    padding: 15px;
+    background-color: #323131;
+    margin: auto;
+    margin:25px auto;
+
+}
+/*campo que tem o mapa e outras funcionalidades*/
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    padding: 10px auto;
+    height: 100%;
+    width: 100%;
+   
+}
+.trilhas{
+    display: flex;
+    flex-direction: row;
+    padding: 10px auto;
+    font-size:40px;
+    margin-top: 70px;
+    margin-left: 130px;
+    height: 100%;
+    width: 100%;
+}
+.trilhas b{
+    margin-left: 105px; 
+}
+.trilhas img{
+    margin-left: -1px;
+    Width:150px;
+    height: 2px;
+    left: 65px;
+    top: 1100px;
+}
+.seções{
+    flex-direction: column;
+    width: 530px;
+    align-self: center;
+}
+/*localização*/
+.Localização{
+    display: flex;
+    flex-wrap: wrap;    
+    margin-top: 81px;
+}
+.Localização p{
+    margin-left: 80px;
+    font-size:large;
+}
+.Localização img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
 }
 
+/*Dificuldade*/
+.Dificuldade{
+    display: flex;
+    flex-wrap: wrap;  
+    margin-top: 81px;
+}
+.Dificuldade p{
+    margin-left: 80px;
+    font-size:large;
+}
+.Dificuldade img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+/*Distancia*/
+.Distancia{
+    display: flex;
+    margin-top: 81px;
+    flex-wrap: wrap;  
+}
+.Distancia p{
+    margin-left: 80px;
+    font-size:large;
+}
+.Distancia img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+/*Mapa do site*/
+.mapa{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+/*Rodapé*/
 .rodape {
   display: flex;
   width: 100%;
