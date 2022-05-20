@@ -49,7 +49,7 @@ a:hover{
     text-decoration: none;
     color:#FFD600;
     cursor: pointer;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 img  {
     position:initial;
@@ -259,8 +259,8 @@ nav{
     flex-direction: row;
     width: 100%;
     height:100%;
-    width: 1350px;
-    height: 600px;
+    height:calc(100vh - 350px) ;
+    width:calc(100vh - -400px) ;
     margin-top: 40px;
 
 }
@@ -344,16 +344,43 @@ nav{
 .amarela img{
     width: 100%;
     height: 100%;
-    width: 900px;
+    height:calc(100vh - 450px) ;
+    width:calc(100vh - 100px) ;
     margin-top: -30px;
 }
 /*Rodapé*/
+.footer{
+    background-color: #323131;
+    width: 100%;
+    height: 100%;
+    height: 366px;
+
+    
+}
 .rodape {
   display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   width: 100%;
-  height: 50px;
-  margin-top: 50px;
-  background-color: rgb(27, 15, 15);
+  height: 100%;
   position: relative;
+  
+}
+.Copyright{
+    display: flex;
+    justify-content: center;
 }
 
+/*Icones*/
+.icones{
+    font-size: 30px;
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content:center;
+    align-items: center;
+
+}

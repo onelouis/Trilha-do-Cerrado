@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function header() {
+function Header() {
     return ( 
         <div>
         <header className="headers">
@@ -21,8 +21,8 @@ function header() {
                 </div>
             
             <div className="Titulo texto-central">
-                <b className="p">Caminhos do </b>
-                <b className="p1">Planalto Central</b>
+                <p className="p">Caminhos do </p>
+                <p className="p1">Planalto Central</p>
             </div>   
          </header>
            
@@ -30,4 +30,4 @@ function header() {
     );
 }
 
-export default header;
+export default Header;

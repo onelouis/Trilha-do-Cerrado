@@ -11,13 +11,13 @@ function Main() {
         <main className="main"> 
             <div className="feed">
                 <div className="caixa1">
-                     <h1> Area brasilia</h1>
+                     <h1> Area Brasilia</h1>
                 </div>
                 <div className="caixa2">
-                    <h1> Area cafuringa</h1>  
+                    <h1> Area Cafuringa</h1>  
                 </div>
                 <div className="caixa3">
-                     <h1> Area união</h1>    
+                     <h1> Area União</h1>    
                 </div>
              </div>
             <div className="trilhas">
@@ -49,8 +49,7 @@ function Main() {
                             }}
                         zoom={15}
                      ></GoogleMap>
-                         ) : <></>}
-                       
+                         ) : <></>}         
                 </div>
             </div>
             <div className="informações">
