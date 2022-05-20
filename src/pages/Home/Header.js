@@ -10,11 +10,11 @@ function header() {
                     <nav>
                         <img src="/imagens/logo.png" alt="logo"/>
                             <ul>
-                                <li>INICIO</li>
-                                <li>BLOG</li>
-                                <li>PARTICIPE</li>
-                                <li>SOBRE</li>
-                                <li>SERVIÇOS</li>
+                                <li><a>INICIO</a></li>
+                                <li><a>BLOG</a></li>
+                                <li><a>PARTICIPE</a></li>
+                                <li><a>SOBRE</a></li>
+                                <li><a>SERVIÇOS</a></li>
                             </ul>
                         <p> LOGIN</p>
                     </nav>
