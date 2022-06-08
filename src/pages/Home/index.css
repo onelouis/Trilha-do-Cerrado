@@ -4,6 +4,7 @@
 .headers{
     
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     padding: 0; 
 }
@@ -12,10 +13,11 @@ header{
     
     background-size: cover;
     background-repeat:no-repeat ;
-    height:calc(100vh - 300px) ;
+    
+    width: 100%;
+    width:calc(100vh - 300px) ;
     background-image:  url('../../../public/imagens/image1.png');
-    background-position: center;
-   
+    background-position:center;   
 }
 /*barra de pesquisa*/
 .toolbar {
@@ -92,12 +94,15 @@ nav{
     
 }
 .p{
+    
     max-width: 400px;
     width: 100%;
     max-height: 100px;
     height: 100%;
     margin: 200px 0px 0px 90px;
     align-items:center ;
+    margin-bottom: 50px;
+    font-weight:bold;
     position: absolute;
     
 }
@@ -107,6 +112,7 @@ nav{
     font-weight:bold;
     width: 100%;
     height: 100%;
+    margin-bottom: 50px;
     align-items:center ;
     max-width: 480px;
     max-height: 100px;
@@ -128,48 +134,50 @@ nav{
     width: 100%;
     flex-direction: row;
     align-items: center;
-    margin-top: 53px;
+    justify-content: space-between;
+    padding: 25px;
+    
 }
 /*primeiros campos do site*/
 .caixa1 {
     display: flex;
-    width: 323px;
-    height: 284px;
+    height:calc(100vh - 700px) ;
+    width:calc(100vh - -250px) ;
+    margin: 20px ;
     left: 214px;
     top: 687px;
     align-items:flex-end;
     color:#FFD600;
     padding: 15px;
     background-color: #323131;
-    margin:25px auto;
+    
 
 }
 .caixa2 {
     display: flex;
-    width: 323px;
-    height: 284px;
+    height:calc(100vh - 700px) ;
+    width:calc(100vh - -250px) ;
+    margin: 20px ;
     left: 214px;
     top: 687px;
-    color:#000000;
     align-items:flex-end;
-    margin: auto;
+    color:#323131;
     padding: 15px;
-    background-color: #FFD600 ;
-    margin:25px auto;
+    background-color: #FFD600;
 
 }
 .caixa3 {
     display: flex;
-    width: 323px;
-    height: 284px;
+    height:calc(100vh - 700px) ;
+    width:calc(100vh - -250px) ;
+    margin: 20px ;
     left: 214px;
     top: 687px;
-    color: #FFD600;
     align-items:flex-end;
+    color:#FFD600;
     padding: 15px;
     background-color: #323131;
-    margin: auto;
-    margin:25px auto;
+        
 
 }
 /*campo que tem o mapa e outras funcionalidades*/
@@ -177,6 +185,7 @@ nav{
     display: flex;
     flex-direction: row;
     padding: 10px auto;
+    margin: 20px  ;
     height: 100%;
     width: 100%;
    
@@ -186,13 +195,13 @@ nav{
     flex-direction: row;
     padding: 10px auto;
     font-size:40px;
-    margin-top: 70px;
-    margin-left: -80px;
+    margin-top: 20px;                               ;
     height: 100%;
     width: 100%;
 }
 .trilhas b{
-    margin-left: 105px; 
+    margin-left: 70px; 
+    
 }
 .trilhas img{
     margin-left: -1px;
@@ -256,13 +265,12 @@ nav{
 /*Mapa do site*/
 .mapa{
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    height:100%;
-    height:calc(100vh - 350px) ;
-    width:calc(100vh - -400px) ;
-    margin-top: 40px;
-
+    height:calc(100vh - 300px) ;
+    width:calc(100vh - -500px) ;
+    left: 214px;
+    top: 687px;
+    margin: 20px ;
+    align-items:flex-end;
 }
 /*informaçoes*/
 .informações{
@@ -305,6 +313,7 @@ nav{
 .imagem img{
     padding-top: 220px;
     margin-right: 900px;
+    width: 100px;
     width: 93.7%;
     
 }
@@ -321,22 +330,21 @@ nav{
 /*sobre a trilha*/
 .amarela{
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    padding: 10px auto;
+    margin: 20px  ;
+    color: #000000;
     height: 100%;
-    color: #121212;
-    height: 500px;
-    font-weight: 400px;
-    padding: 20px 20px;
-    left: 0px;
-    top: 2221px;
+    width: 100%;
     background-color: #FFD600;
 }
 .amarela p{
-    width: 50%;
+    width: 100%;
     height: 100%;
     padding-top: 105px;
+    padding-bottom: 25px;
     padding-left: 70px;
-    padding-right: 0px;
+    padding-right: 25px;
     font-size: 30px;
     justify-items: center auto;
     text-align: justify;
@@ -344,7 +352,7 @@ nav{
 .amarela img{
     width: 100%;
     height: 100%;
-    height:calc(100vh - 450px) ;
+    height:calc(100vh - 400px) ;
     width:calc(100vh - 100px) ;
     margin-top: -30px;
 }
@@ -384,3 +392,355 @@ nav{
     align-items: center;
 
 }
+/* On screens that are 1800px wide or less, go from four columns to two columns */
+@media screen and (max-width: 1800px) {
+    .header {
+      width: 100%;
+      height: 100%;
+    }
+    .main{
+        width: 100%;
+        height: 100%;
+      }
+      .caixa1 {
+        display: flex;
+        height:calc(100vh - 550px) ;
+        width:calc(100vh - -150px) ;
+        margin: 20px ;
+        left: 214px;
+        top: 687px;
+        align-items:flex-end;
+        color:#FFD600;
+        padding: 15px;
+        background-color: #323131;
+        
+    
+    }
+    .caixa2 {
+        display: flex;
+        height:calc(100vh - 550px) ;
+        width:calc(100vh - -150px) ;
+        margin: 20px;
+        left: 214px;
+        top: 687px;
+        margin: 20px ;
+        color:#000000;
+        align-items:flex-end;
+        margin: auto;
+        padding: 15px;
+        background-color: #FFD600 ;
+        
+    
+    }
+    .caixa3 {
+        display: flex;
+        height:calc(100vh - 550px) ;
+        width:calc(100vh - -150px) ;
+        margin: 20px ;
+        left: 214px;
+        top: 687px;
+        align-items:flex-end;
+        color:#FFD600;
+        padding: 15px;
+        background-color: #323131;
+        
+    }
+    .amarela{
+        flex-wrap: wrap;
+    }
+    .amarela img{
+        width: 100%;
+        height: 100%;
+        height: 500px;
+    }
+    
+    div{
+        background-color: ;
+    }
+  }
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+    
+    
+    .conteudo {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px;
+    }
+    .mapa{
+        
+        display: flex;
+        height:calc(100vh - 300px) ;
+        width:calc(100vh - -250px) ;
+        left: 214px;
+        top: 687px;
+        margin: 10px ;
+        align-items:flex-end;
+    }
+    .caixa1 {
+        display: flex;
+        height:calc(100vh - 500px) ;
+        width:calc(100vh - -150px) ;
+        margin: 20px ;
+        left: 214px;
+        top: 687px;
+        align-items:flex-end;
+        color:#FFD600;
+        padding: 15px;
+        background-color: #323131;
+        
+    
+    }
+    .caixa2 {
+        display: flex;
+        height:calc(100vh - 500px) ;
+        width:calc(100vh - -150px) ;
+        margin: 20px;
+        left: 214px;
+        top: 687px;
+        margin: 20px ;
+        color:#000000;
+        align-items:flex-end;
+        margin: auto;
+        padding: 15px;
+        background-color: #FFD600 ;
+        
+    
+    }
+    .caixa3 {
+        display: flex;
+        height:calc(100vh - 500px) ;
+        width:calc(100vh - -150px) ;
+        margin: 20px ;
+        left: 214px;
+        top: 687px;
+        align-items:flex-end;
+        color:#FFD600;
+        padding: 15px;
+        background-color: #323131;
+        
+    }
+    .amarela{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px auto;
+        margin: 20px  ;
+        color: #000000;
+        height: 100%;
+        width: 100%;
+        background-color: #FFD600;
+    }
+    div{
+        background-color: ;
+    }
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .header {
+      width: 100%;
+      height: 100%;
+    }
+    .main{
+        width: 100%;
+        height: 100%;
+      }
+    .amarela img{
+        width: 100%;
+        height: 100%;
+    }
+    .conteudo {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px;
+        
+    }
+    .mapa{
+        
+        display: flex;
+        height:calc(100vh - 300px) ;
+        width:calc(100vh - -100px) auto;
+        left: 214px;
+        top: 687px;
+        margin: 20px ;
+        align-items:flex-end;
+    
+    }
+    
+    .caixa1 {
+        display: flex;
+        height:calc(100vh - 500px) ;
+        width:calc(100vh - 150px) ;
+        margin: 10px ;
+        left: 214px;
+        top: 687px;
+        align-items:flex-end;
+        color:#FFD600;
+        padding: 15px;
+        background-color: #323131;
+        
+    
+    }
+    .caixa2 {
+        display: flex;
+        height:calc(100vh - 500px) ;
+        width:calc(100vh - 150px) ;
+        margin: 10px ;
+        left: 214px;
+        top: 687px;
+        align-items:flex-end;
+        color:#323131;
+        padding: 15px;
+        background-color: #FFD600;
+    
+    }
+    .caixa3 {
+        display: flex;
+        height:calc(100vh - 500px) ;
+        width:calc(100vh - 150px) ;
+        margin: 10px ;
+        left: 214px;
+        top: 687px;
+        align-items:flex-end;
+        color:#FFD600;
+        padding: 15px;
+        background-color: #323131;
+            
+    
+    }
+    
+    div{
+        background-color: ;
+    }
+  }
+@media screen and (max-width: 480px) {
+    .header {
+      width: 100%;
+      height: 100%;
+    }
+    .main{
+        width: 100%;
+        height: 100%;
+      }
+    .amarela img{
+        width: 100%;
+        height: 100%;
+        height: 500px;
+    }
+    div{
+        background-color: ;
+    }
+  }
+@media only screen and (min-width: 960px) {
+    /* styles for browsers larger than 960px; */
+    div{
+        background-color: ;
+    }
+    .headers{
+    
+        width: 100%;
+        margin: 0 auto;
+        padding: 0; 
+    }
+    
+    header{
+        
+        background-size: cover;
+        background-repeat:no-repeat ;
+        height:calc(100vh - 100px) ;
+        background-image:  url('../../../public/imagens/image1.png');
+        background-position: center;
+       
+    }
+    .toolbar {
+        
+        background-color: rgba(0, 0, 0, 0.221);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(0.8px);
+      
+    }
+    .main{
+      width: 100%;
+      height: 100%;
+    }
+
+    .amarela img{
+        width: 100%;
+        height: 100%;
+        height: 400px;
+    }
+    .titulo{
+      
+        width: 100%;
+        height:100vh ;
+        top:100vh ;
+        background-color: rgba(0, 0, 0, 0.221);
+         -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(0.8px);
+        
+    }
+    .p{
+        font-size: 35px;
+        margin-bottom: 50px;
+        
+        
+    }
+    .p1{
+       
+        align-content: center;
+        font-size: 35px;
+        margin-left: 175px;
+        margin-bottom: 50px;
+        
+    }
+    .caixa1 {
+        display: flex;
+        height:calc(100vh - 500px) ;
+        width:calc(100vh - -150px) ;
+        margin: 20px ;
+        left: 214px;
+        top: 687px;
+        align-items:flex-end;
+        color:#FFD600;
+        padding: 15px;
+        background-color: #323131;
+        
+    
+    }
+    .caixa2 {
+        display: flex;
+        height:calc(100vh - 500px) ;
+        width:calc(100vh - -150px) ;
+        margin: 20px;
+        left: 214px;
+        top: 687px;
+        margin: 20px ;
+        color:#000000;
+        align-items:flex-end;
+        margin: auto;
+        padding: 15px;
+        background-color: #FFD600 ;
+        
+    
+    }
+    .caixa3 {
+        display: flex;
+        height:calc(100vh - 500px) ;
+        width:calc(100vh - -150px) ;
+        margin: 20px ;
+        left: 214px;
+        top: 687px;
+        align-items:flex-end;
+        color:#FFD600;
+        padding: 15px;
+        background-color: #323131;
+        
+    
+    }
+  }
+}
+
