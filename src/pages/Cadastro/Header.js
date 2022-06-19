@@ -1,10 +1,11 @@
 import React from "react";
-import {Link} from 'react-router-dom' 
+import {Link} from 'react-router-dom'
 
-function Header() {
+
+function cabeca() {
     return ( 
         <div>
-        <header className="headers">
+        <header className="cabecario">
            
                 <div className="toolbar">
                     <nav>
@@ -13,19 +14,20 @@ function Header() {
                                 <li>
                                     <Link to="/">INICIO</Link>
                                 </li>
-                                <li><a>BLOG</a></li>
+                                <li>BLOG</li>
                                 <li>SOBRE</li>
-                                <li><a>SERVIÇOS</a></li>
+                                <li>SERVIÇOS</li>
                             </ul>
-                            <p><Link to="/Login">LOGIN</Link></p>
+                        <p><Link to="/Login">LOGIN</Link></p>
 
-                            
+
                     </nav>
                 </div>
             
-            <div className="Titulo texto-central">
-                <p className="p">Caminhos do </p>
-                <p className="p1">Planalto Central</p>
+                <div className="Titulo texto-central">
+                    <img src="/imagens/logo.png" alt="logo" id="logoLog"/>
+                    <p className="pLogin">Cadastro</p>
+                    <b className="p1Login">caminhos do planalto central</b>
             </div>   
          </header>
            
@@ -33,4 +35,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default cabeca;

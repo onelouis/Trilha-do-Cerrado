@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans:ital,wght@1,300&display=swap');
+
+
+.pLogin{
+    position: absolute;
+    font-size: 80px;
+    font-family: 'Open Sans';
+    top: 35%;
+    left: 43%;
+}
+
+.p1Login{
+    position: absolute;
+    color: #FFD600;
+    top: 50%;
+    left: 43%;
+}
+
+#logoLog{
+    display: absolute;
+    width: 15%;
+    height: 45%;
+    margin-left: 26%;
+    margin-top: 7%;
+}
+
+.tituloLogin{
+    position: absolute;
+    width: 500px;
+    height: 10%;
+    left: 58%;
+    top: 790px;
+    text-align: center;
+    font-size: 40px;
+    color: #FFD600;
+}
+
+.formLogin{
+    position: absolute;
+    width: 500px;
+    height: 30%;
+    left: 58%;
+    top: 900px;
+       
+}
+#link{
+    position: absolute;
+    bottom: 45px;
+    text-decoration: none;
+}
+
+.bloco2Login{
+    height: 0.1rem ;
+    width: 500px;
+    margin-left: 58%;
+    margin-top: -245px;
+    background-color: #FFD600;
+}
+
+
+
+
