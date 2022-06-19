@@ -1,22 +1,20 @@
 import React from "react";
 import Header from "./Header";
 import Main from "./Main";
-import Footer from "./Footer";
 import './index.css'
 
+function Login (){
 
-function Home () {
-    return (
+    return(
     <div>
         <div>
-        <Header/>
+            <Header/>
         </div>
         <div>
-        <Main />
+            <Main/>
         </div>
-        <Footer />
     </div>
-    );
+    )
 }
 
-export default Home;
+export default Login;
