@@ -1,62 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans:ital,wght@1,300&display=swap');
 
 
-.pLogin{
-    position: absolute;
-    font-size: 80px;
-    font-family: 'Open Sans';
-    top: 35%;
-    left: 43%;
-}
 
-.p1Login{
-    position: absolute;
-    color: #FFD600;
-    top: 50%;
-    left: 43%;
-}
-
-#logoLog{
-    display: absolute;
-    width: 15%;
-    height: 45%;
-    margin-left: 26%;
-    margin-top: 7%;
-}
 
 .tituloLogin{
     position: absolute;
-    width: 500px;
-    height: 10%;
-    left: 58%;
-    top: 790px;
-    text-align: center;
-    font-size: 40px;
+    width: 13%;
+    height: 7%;
+    left: 66%;
+    top: 81%;
     color: #FFD600;
+    font-size: clamp(20px, 10px + 3vw, 55px);
+
 }
 
 .formLogin{
     position: absolute;
-    width: 500px;
+    width: 25%;
     height: 30%;
     left: 58%;
-    top: 900px;
+    top: 95%;
        
 }
 #link{
     position: absolute;
-    bottom: 45px;
+    top: 75%;
     text-decoration: none;
+    font-size: clamp(5px, 6px + 1vw, 14px);
 }
 
 .bloco2Login{
+    position: absolute;
     height: 0.1rem ;
-    width: 500px;
-    margin-left: 58%;
-    margin-top: -245px;
+    width: 27%;
+    top: 90%;
+    left: 57%;
     background-color: #FFD600;
 }
 
 
+@media screen and (max-width: 900px){
 
+    #link{
+        top: 82%;
+    }
+
+    .tituloLogin{
+        top: 85%;
+        left: 64%;
+    }
+
+    .bloco2Login{
+        top: 91%;
+    }
+}
 

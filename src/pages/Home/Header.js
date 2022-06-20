@@ -8,7 +8,7 @@ function Header() {
            
                 <div className="toolbar">
                     <nav>
-                        <img src="/imagens/logo.png" alt="logo"/>
+                        <img src="/imagens/logo.png" alt="logo" id="lo"/>
                             <ul>
                                 <li>
                                     <Link to="/">INICIO</Link>

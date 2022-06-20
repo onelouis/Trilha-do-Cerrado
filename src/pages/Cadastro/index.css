@@ -11,6 +11,36 @@
     background-image:  url('../../../public/imagens/capa2.png');
 }
 
+.pLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    font-size: clamp(20px, 20px + 3vw, 120px) ;
+    font-family: 'Open Sans';
+    top: 35%;
+    left: 43%;
+}
+
+.p1Login{
+    display: flex;
+    position: absolute;
+    color: #FFD600;
+    font-size: clamp(10px, 6px + 3vw, 100px) ;
+    top: 50%;
+    left: 43%;
+}
+
+
+#logoLog{
+    position: absolute;
+    display: flex;
+    width: 14%;
+    height: 48%;
+    top: 24%;
+    left: 21%;
+}
+
 
 body{
     font-family: Inter;
@@ -20,7 +50,7 @@ body{
 
 
 .bloco{
-        display: absolute;
+        display: flex;
         height: 600px ;
         width: 40%;
         background-color:#FCE011;
@@ -28,31 +58,30 @@ body{
 }
 
 
-.logoImg{
-    display: absolute;
-    width: 10%;
-    height: 50%;
-    margin-left: 15%;
-    margin-top: -350px;
+#logoImg{
+    display: flex;
+    width: 4%;
+    height: 4%;
+    margin-left: 17%;
+    margin-top: -360px;
 }
 
 .titulo{
     position: absolute;
-    width: 500px;
-    height: 10%;
-    left: 58%;
-    top: 750px;
-    text-align: center;
-    font-size: 40px;
+    width: 13%;
+    height: 7%;
+    left: 64%;
+    top: 79%;
     color: #FFD600;
+    font-size: clamp(20px, 10px + 3vw, 55px);
 }
 
 .form{
     position: absolute;
-    width: 500px;
+    width: 27%;
     height: 40%;
     left: 58%;
-    top: 850px;
+    top: 93%;
        
 }
 
@@ -69,8 +98,7 @@ body{
     padding: 6px;
     border-radius: 8px;
     color: black;
-    font-size: 20px;
-    font-style: normal;
+    font-size: clamp(5px, 5px + 3vw, 20px);
 
 }
 
@@ -80,6 +108,7 @@ body{
     left: 13px;
     pointer-events: none; 
     transition: .5s;
+    font-size: clamp(10px, 2px + 2vw, 15px);
     color: black;
 }
 
@@ -100,18 +129,69 @@ body{
     border: none;
     padding: 10px;
     color: black;
-    font-size: 15px;
+    font-weight: bold;
     cursor: pointer;
+    font-size: clamp(4px, 1px + 2vw, 15px);
     border-radius: 15px;
     
 }
 
 
 .bloco2{
-    height: 0.1rem ;
-    width: 500px;
-    margin-left: 58%;
-    margin-top: -285px;
+    position: absolute;
+    display: flex;
+    height: 0.5px ;
+    width: 28%;
+    left: 57%;
+    top: 87.5%;
     background-color: #FFD600;
 }
 
+
+@media screen and (max-width: 900px) {
+
+    .pLogin{
+        left: 46%;
+        top: 36%;
+    }
+
+    .p1Login{
+        left: 46%;
+        top: 46%;
+    }
+
+    #logoLog{
+        position: absolute;
+        display: flex;
+        width: 23%;
+        height: 33%;
+        top: 26%;
+        left: 10%;
+    }
+
+    #logoImg{
+        display: flex;
+        width: 9%;
+        height: 9%;
+        margin-top: -360px;
+    }
+
+    .titulo{
+        position: absolute;
+        width: 13%;
+        height: 7%;
+        left: 61.5%;
+        top: 81%;
+        color: #FFD600;
+        font-size: clamp(20px, 10px + 3vw, 55px);
+    }
+   
+    .inputBox{
+        position: relative;
+        padding: 1px;
+    }
+
+
+}
+
+    

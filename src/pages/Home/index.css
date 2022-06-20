@@ -22,15 +22,14 @@ header{
 /*barra de pesquisa*/
 .toolbar {
     display: flex;
-    flex-direction: row;
-    
     width: 100%;
-    Top:18px;
-    Left:99px;
+    Top:10%;
+    Left: 10%;
     height: 85px;
     background-color: rgba(0, 0, 0, 0.221);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(0.8px);
+
     
 }
 ul {
@@ -40,9 +39,10 @@ ul {
     margin: 0;
     justify-content:space-between;
     align-items: center;
+    font-size: clamp(5px, 6px + 1vw, 14px);
 }
 li{
-    margin: 0 15px;
+    margin: 0 20px;
 }
 a{
     color:white
@@ -732,4 +732,3 @@ nav{
     }
   }
 }
-
