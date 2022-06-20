@@ -2,6 +2,7 @@ import React from "react";
 
 function Main(){
 
+    
     return(
         <body>
             <div>
@@ -11,9 +12,7 @@ function Main(){
                 </div>
 
                 
-                <div className="logoImg">
-                    <img src="/imagens/logo2.png" alt="logo"/>
-                </div>
+                <img src="/imagens/logo2.png" alt="logo" id="logoImg"/>
 
                 <div className="titulo">
                     Cadastro

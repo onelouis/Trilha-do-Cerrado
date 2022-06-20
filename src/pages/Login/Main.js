@@ -10,10 +10,8 @@ function Main(){
                     <div className="bloco"></div>
                 </div>
 
-                
-                <div className="logoImg">
-                    <img src="/imagens/logo2.png" alt="logo"/>
-                </div>
+
+                <img src="/imagens/logo2.png" alt="logo" id="logoImg"/>
 
                 <div className="tituloLogin">
                     Login
@@ -21,7 +19,7 @@ function Main(){
 
                 <div className="formLogin">
 
-                    <form action="">
+                    <form>
                         
                         <div class="inputBox">
                             <input type='text' name='email' id='email' class="inputUser" required></input>
@@ -39,6 +37,7 @@ function Main(){
 
                         <input type="submit" name="submit" id="submit"></input>
 
+                        <br></br>
                         
                         <a id="link" href="/Cadastro">Não possui casastro? Casatre-se</a>
                         
