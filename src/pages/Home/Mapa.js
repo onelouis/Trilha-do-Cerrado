@@ -5,7 +5,7 @@ import { GoogleMap, useJsApiLoader, Marker} from '@react-google-maps/api'
 function Mapa() {
   const { isLoaded } = useJsApiLoader({
     
-    googleMapsApiKey: 
+    googleMapsApiKey: "AIzaSyBA3iomnIc2l6end6asGmRctazc9uW0NCo"
   })
       return ( 
         <div className="mapa">

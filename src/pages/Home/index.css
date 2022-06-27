@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
 
-
-
 /* cabeçalho do site*/
 .headers{
     
@@ -15,6 +13,7 @@ header{
     
     background-size: cover;
     background-repeat:no-repeat ;
+    
     width: 100%;
     width:calc(100vh - 300px) ;
     background-image:  url('../../../public/imagens/image1.png');
@@ -54,16 +53,15 @@ a:hover{
     cursor: pointer;
     transition-duration: 0.5s;
 }
-.toolbar img  {
-    
+img  {
+    position:initial;
     display: flex;
-    width: 102.64px;
-    height: 5vw;
-    left: 52px;
-    top: 13px;
+    width: 80px;
+    height: calc(100vh -45px);
+    top: 14px;
     padding: 0;
-    bottom: 2%;
-    margin-left: 6%;
+    bottom: 10px;
+    margin-left: 60px;
 }
 nav{
     display: flex;
@@ -79,14 +77,16 @@ nav{
 /*Titulo central do site*/
 .Titulo{
     display: flex;
+    
     font-family: 'Russo One';
     font-style:normal;
     font-weight: 400;
+    
     line-height: 10px;
+    
     width: 100%;
     height:calc(100vh - 385px) ;
-    
-    font-size: clamp(20px, 10px + 3vw, 55px);
+    font-size: clamp(40px, 10px + 3vw, 55px);
     background-color: rgba(0, 0, 0, 0.221);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(0.8px);
@@ -99,7 +99,7 @@ nav{
     height: 100%;
     margin: 10% 0px 0px 5%;
     align-items:center ;
-    margin-bottom: 50px;
+    
     font-weight:bold;
     position: absolute;
     
@@ -110,7 +110,7 @@ nav{
     font-weight:bold;
     width: 100%;
     height: 100%;
-    margin-bottom: 50px;
+   
     align-items:center ;
     max-width: 480px;
     max-height: 100px;
@@ -133,10 +133,13 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 2%;
+    padding: 25px;
     
 }
 /*primeiros campos do site*/
+.caixa1 h1{
+    font-size: clamp(20px, 10px + 3vw, 40px);
+}
 .caixa1 {
     display: flex;
     height:calc(100vh - 700px) ;
@@ -183,9 +186,6 @@ nav{
         
 
 }
-.caixa1 h1{
-    font-size: clamp(20px, 10px + 3vw, 40px);
-}
 /*campo que tem o mapa e outras funcionalidades*/
 .conteudo {
     display: flex;
@@ -194,14 +194,13 @@ nav{
     margin: 20px  ;
     height: 100%;
     width: 100%;
-    
    
 }
 .trilhas{
     display: flex;
     flex-direction: row;
     padding: 2% auto;
-    margin-top: 4%;                               ;
+    margin-top: 1%;                              ;
     height: 100%;
     width: 100%;
     font-size: clamp(20px, 10px + 3vw, 40px);
@@ -221,7 +220,6 @@ nav{
     flex-direction: column;
     width: 530px;
     align-self: center;
-    
 }
 /*localização*/
 .Localização{
@@ -281,7 +279,6 @@ nav{
     height: 50px;
     margin-right: 3%;
 }
-/*Mapa do site*/
 .mapa{
     display: flex;
     width: 100%;
@@ -292,9 +289,6 @@ nav{
     padding: 5px;
     margin-bottom: -10px;
     align-items:flex-end;
-}
-.map-marker{
-    margin-top: -30px;
 }
 /*informaçoes*/
 .informações{
@@ -352,7 +346,6 @@ nav{
     height: 2px;
     margin-right: 270px;
     margin-left: -0.2%;
-    width: 100px;
     width: 100%;
     
 }
@@ -595,7 +588,7 @@ nav{
     
     }
     div{
-        background-color: red;
+        background-color:;
     }
   /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -694,7 +687,7 @@ nav{
       }
     
    div{
-    background-color: blue;
+    background-color:blue;
    }
   }
 @media only screen and (min-width: 960px) {
@@ -706,7 +699,6 @@ nav{
         margin: 0 auto;
         padding: 0; 
     }
-    
     header{
         
         background-size: cover;
@@ -716,6 +708,7 @@ nav{
         background-position: center;
        
     }
+   
     .toolbar {
         
         background-color: rgba(0, 0, 0, 0.221);
@@ -727,8 +720,6 @@ nav{
       width: 100%;
       height: 100%;
     }
-
-    
     .titulo{
       
         width: 100%;
@@ -753,6 +744,7 @@ nav{
         margin-bottom: 50px;
         
     }
+   
     .caixa1 {
         display: flex;
         height:calc(100vh - 500px) ;
