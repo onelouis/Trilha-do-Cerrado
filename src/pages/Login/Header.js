@@ -15,7 +15,9 @@ function cabeca() {
                                     <Link to="/">INICIO</Link>
                                 </li>
                                 <li>BLOG</li>
-                                <li>SOBRE</li>
+                                <li>
+                                    <Link to="/Sobre">SOBRE</Link>
+                                </li>
                                 <li>SERVIÇOS</li>
                             </ul>
                         <p><Link to="/Login">LOGIN</Link></p>

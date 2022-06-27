@@ -1,11 +1,9 @@
 import React from "react";
-import { GoogleMap, useJsApiLoader } from '@react-google-maps/api'
+import Mapa from "./Mapa";
+
 
 function Main() {
-    const { isLoaded } = useJsApiLoader({
-        id: 'google-map-script',
-        googleMapsApiKey: "AIzaSyAcIJouSyIDL7eTDeM089G4B7VLSg2hXgM"
-      })
+
     return ( 
     
         <main className="main"> 
@@ -38,18 +36,10 @@ function Main() {
                          <p>O arco cafuringa fica localizado na região de</p>   
                     </div>
                 </div>
-                <div className="mapa">
-                       
-                        { isLoaded ? (
-                        <GoogleMap
-                         mapContainerStyle={{width: '100%', height: '100%'}}
-                          center={{
-                          lat:-15.835352, 
-                          lng:-48.045096
-                            }}
-                        zoom={15}
-                     ></GoogleMap>
-                         ) : <></>}         
+                <div>
+                <Mapa/>
+                        
+                             
                 </div>
             </div>
             <div className="informações">
@@ -60,8 +50,12 @@ function Main() {
                         <div className="cinza">
                             
                             <b className="b" >Arco </b>
-                            <b className="b1">Cafuringa</b><img src="/imagens/linha2.png" alt="linha 2" />
+                            <b className="b1">Cafuringa</b>
+
                         </div>
+                        <div className="linha">
+                                <img src="/imagens/linha2.png" alt="linha 2" />
+                        </div>     
                 </div>
                 <div className="amarela">
                     <p >Com seus 150km, este arco se destaca no aspecto ambiental e 
