@@ -11,16 +11,16 @@ function Main() {
                 <div className="caixa1">
                     
                     <h1>
-                        <a><Link to="/AreaBrasilia">Area Brasilia</Link></a>
+                        <Link to="/AreaBrasilia">Area Brasilia</Link>
                     </h1>
                 </div>
                 <div className="caixa2">
                     <h1> 
-                        <a><Link to="/">Area Cafuringa</Link></a>
+                        <Link to="/">Area Cafuringa</Link>
                     </h1>  
                 </div>
                 <div className="caixa3">
-                    <h1> <a><Link to="/AreaUniao">Area União</Link>  </a>  </h1>    
+                    <h1> <Link to="/AreaUniao">Area União</Link>    </h1>    
                 </div>
             </div>
             <div className="trilhas">
@@ -42,10 +42,9 @@ function Main() {
                     </div>
                 </div>
                 <div >
-                    <iframe className="responsive-iframe "src="https://www.google.com/maps/d/u/0/embed?mid=1wlBUE0O1H7Al_a_ULzB8AyeeX3uaKuc&ehbc=2E312F"></iframe>
-
-                        
-                     
+                    <iframe className="responsive-iframe " src="https://www.google.com/maps/d/embed?mid=147MG-4hX5TwVd0wgaQbb_pZL1-XTZcE&ehbc=2E312F" width="640" height="480" ></iframe>
+                                
+          zoom: 15,
                 </div>
             </div>
             <div className="informações">
@@ -55,8 +54,8 @@ function Main() {
                         </div>
                         <div className="cinza">
                             
-                            <b className="b" >Arco </b>
-                            <b className="b1">Cafuringa</b>
+                            <b className="b" >Area </b>
+                            <b className="b1">União</b>
 
                         </div>
                         <div className="linha">

@@ -42,8 +42,7 @@ function Main() {
                     </div>
                 </div>
                 <div >
-                    <iframe className="responsive-iframe "src="https://www.google.com/maps/d/u/0/embed?mid=1wlBUE0O1H7Al_a_ULzB8AyeeX3uaKuc&ehbc=2E312F"></iframe>
-
+                    <iframe className="responsive-iframe " src="https://www.google.com/maps/d/embed?mid=1ROmyb1-tTVoYFcBSLuZw9MtcLvl13UY&ehbc=2E312F" width="640" height="480" zoom="15"></iframe>
                         
                      
                 </div>
@@ -55,8 +54,8 @@ function Main() {
                         </div>
                         <div className="cinza">
                             
-                            <b className="b" >Arco </b>
-                            <b className="b1">Cafuringa</b>
+                            <b className="b" >Area </b>
+                            <b className="b1">Brasilia</b>
 
                         </div>
                         <div className="linha">
