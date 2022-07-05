@@ -27,7 +27,7 @@
     position: absolute;
     color: #FFD600;
     font-size: clamp(10px, 6px + 3vw, 100px) ;
-    top: 50%;
+    top: 58%;
     left: 43%;
 }
 
@@ -36,7 +36,7 @@
     position: absolute;
     display: flex;
     width: 14%;
-    height: 48%;
+    height: 58%;
     top: 24%;
     left: 21%;
 }
@@ -79,7 +79,7 @@ body{
 .form{
     position: absolute;
     width: 27%;
-    height: 40%;
+    height: 35%;
     left: 58%;
     top: 93%;
        
@@ -143,7 +143,7 @@ body{
     height: 0.5px ;
     width: 28%;
     left: 57%;
-    top: 87.5%;
+    top: 89%;
     background-color: #FFD600;
 }
 

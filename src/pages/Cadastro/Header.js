@@ -10,17 +10,20 @@ function cabeca() {
                 <div className="toolbar">
                     <nav>
                         <img src="/imagens/logo.png" alt="logo"/>
-                            <ul>
+                        <ul>
                                 <li>
                                     <Link to="/">INICIO</Link>
                                 </li>
-                                <li>BLOG</li>
+                                <li> 
+                                    <Link to="/Blog">BLOG</Link>
+                                </li>
                                 <li>
                                     <Link to="/Sobre">SOBRE</Link>
                                 </li>
-                                <li>SERVIÇOS</li>
+                                <li><a>SERVIÇOS</a></li>
                             </ul>
-                        <p><Link to="/Login">LOGIN</Link></p>
+                            <p><Link to="/Login">LOGIN</Link></p>
+
 
 
                     </nav>

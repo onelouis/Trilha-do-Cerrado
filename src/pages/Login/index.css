@@ -39,15 +39,15 @@
 }
 
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1400px){
 
     #link{
-        top: 82%;
+        top: 120%;
     }
 
     .tituloLogin{
-        top: 85%;
-        left: 64%;
+        top: 78%;
+        left: 66%;
     }
 
     .bloco2Login{
