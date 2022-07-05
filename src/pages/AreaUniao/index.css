@@ -484,9 +484,9 @@ nav{
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+      
         padding: 15px;
-        background-color: #323131;
+        
         
     
     }
@@ -498,11 +498,11 @@ nav{
         left: 214px;
         top: 687px;
         margin: 20px ;
-        color:#000000;
+        
         align-items:flex-end;
         margin: auto;
         padding: 15px;
-        background-color: #FFD600 ;
+        
         
     
     }
@@ -514,9 +514,9 @@ nav{
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+      
         padding: 15px;
-        background-color: #323131;
+ 
         
     }
     
@@ -554,9 +554,9 @@ nav{
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+        
         padding: 15px;
-        background-color: #323131;
+        
         
     
     }
@@ -568,11 +568,11 @@ nav{
         left: 214px;
         top: 687px;
         margin: 20px ;
-        color:#000000;
+        
         align-items:flex-end;
         margin: auto;
         padding: 15px;
-        background-color: #FFD600 ;
+        
         
     
     }
@@ -584,10 +584,11 @@ nav{
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
-        padding: 15px;
-        background-color: #323131;
         
+        padding: 15px;
+        
+        
+    
     }
     .amarela p{
         width: 100%;
@@ -646,45 +647,47 @@ nav{
     .caixa1 {
         display: flex;
         height:calc(100vh - 500px) ;
-        width:calc(100vh - 150px) ;
-        margin: 10px ;
+        width:calc(100vh - -150px) ;
+        margin: 20px ;
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+        
         padding: 15px;
-        background-color: #323131;
+        
         
     
     }
     .caixa2 {
         display: flex;
         height:calc(100vh - 500px) ;
-        width:calc(100vh - 150px) ;
-        margin: 10px ;
+        width:calc(100vh - -150px) ;
+        margin: 20px;
         left: 214px;
         top: 687px;
+        margin: 20px ;
+        
         align-items:flex-end;
-        color:#323131;
+        margin: auto;
         padding: 15px;
-        background-color: #FFD600;
+        
+        
     
     }
     .caixa3 {
         display: flex;
         height:calc(100vh - 500px) ;
-        width:calc(100vh - 150px) ;
-        margin: 10px ;
+        width:calc(100vh - -150px) ;
+        margin: 20px ;
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+        
         padding: 15px;
-        background-color: #323131;
-            
+        
+        
     
     }
-    
   
     
   }
@@ -770,9 +773,9 @@ nav{
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+        
         padding: 15px;
-        background-color: #323131;
+        
         
     
     }
@@ -784,11 +787,11 @@ nav{
         left: 214px;
         top: 687px;
         margin: 20px ;
-        color:#000000;
+        
         align-items:flex-end;
         margin: auto;
         padding: 15px;
-        background-color: #FFD600 ;
+        
         
     
     }
@@ -800,9 +803,9 @@ nav{
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+        
         padding: 15px;
-        background-color: #323131;
+        
         
     
     }
