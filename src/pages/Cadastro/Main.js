@@ -42,7 +42,7 @@ function Main(){
 
                         <br></br>
 
-                        <input type="submit" name="submit" id="submit"></input>
+                        <input type="submit" name="ler mais" id="ler mais"></input>
 
                         
                     </form>

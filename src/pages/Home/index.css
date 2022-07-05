@@ -139,6 +139,7 @@ nav{
 }
 /*primeiros campos do site*/
 
+
 .caixa1 a{
     color: white;
 }
@@ -160,22 +161,14 @@ nav{
     left: 214px;
     top: 687px;
     align-items:flex-end;
-    padding: 15px;
-    background-color: #323131; 
-
-}
-.caixa2 a{
-    color: white;
-}
-.caixa2 a:hover{
-    text-decoration: none;
     color:#FFD600;
-    cursor: pointer;
-    transition-duration: 0.5s;
+    padding: 15px;
+    background-color: #323131;
+        
+
 }
 .caixa2 h1{
     font-size: clamp(20px, 10px + 3vw, 40px);
-    color: #fff;
 }
 .caixa2 {
     display: flex;
@@ -185,20 +178,10 @@ nav{
     left: 214px;
     top: 687px;
     align-items:flex-end;
-    color:#FFD600;
+    color:#323131;
     padding: 15px;
-    background-color: #323131;
-        
+    background-color: #323131; 
 
-}
-.caixa3 a{
-    color: white;
-}
-.caixa3 a:hover{
-    text-decoration: none;
-    color:#FFD600;
-    cursor: pointer;
-    transition-duration: 0.5s;
 }
 .caixa3 h1{
     font-size: clamp(20px, 10px + 3vw, 40px);
@@ -501,9 +484,9 @@ nav{
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+      
         padding: 15px;
-        background-color: #323131;
+        
         
     
     }
@@ -515,11 +498,11 @@ nav{
         left: 214px;
         top: 687px;
         margin: 20px ;
-        color:#000000;
+        
         align-items:flex-end;
         margin: auto;
         padding: 15px;
-        background-color: #FFD600 ;
+        
         
     
     }
@@ -531,9 +514,9 @@ nav{
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+      
         padding: 15px;
-        background-color: #323131;
+ 
         
     }
     
@@ -571,9 +554,9 @@ nav{
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+        
         padding: 15px;
-        background-color: #323131;
+        
         
     
     }
@@ -585,11 +568,11 @@ nav{
         left: 214px;
         top: 687px;
         margin: 20px ;
-        color:#000000;
+        
         align-items:flex-end;
         margin: auto;
         padding: 15px;
-        background-color: #FFD600 ;
+        
         
     
     }
@@ -601,10 +584,11 @@ nav{
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
-        padding: 15px;
-        background-color: #323131;
         
+        padding: 15px;
+        
+        
+    
     }
     .amarela p{
         width: 100%;
@@ -663,45 +647,47 @@ nav{
     .caixa1 {
         display: flex;
         height:calc(100vh - 500px) ;
-        width:calc(100vh - 150px) ;
-        margin: 10px ;
+        width:calc(100vh - -150px) ;
+        margin: 20px ;
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+        
         padding: 15px;
-        background-color: #323131;
+        
         
     
     }
     .caixa2 {
         display: flex;
         height:calc(100vh - 500px) ;
-        width:calc(100vh - 150px) ;
-        margin: 10px ;
+        width:calc(100vh - -150px) ;
+        margin: 20px;
         left: 214px;
         top: 687px;
+        margin: 20px ;
+        
         align-items:flex-end;
-        color:#323131;
+        margin: auto;
         padding: 15px;
-        background-color: #FFD600;
+        
+        
     
     }
     .caixa3 {
         display: flex;
         height:calc(100vh - 500px) ;
-        width:calc(100vh - 150px) ;
-        margin: 10px ;
+        width:calc(100vh - -150px) ;
+        margin: 20px ;
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+        
         padding: 15px;
-        background-color: #323131;
-            
+        
+        
     
     }
-    
   
     
   }
@@ -787,9 +773,9 @@ nav{
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+        
         padding: 15px;
-        background-color: #323131;
+        
         
     
     }
@@ -801,11 +787,11 @@ nav{
         left: 214px;
         top: 687px;
         margin: 20px ;
-        color:#000000;
+        
         align-items:flex-end;
         margin: auto;
         padding: 15px;
-        background-color: #FFD600 ;
+        
         
     
     }
@@ -817,9 +803,9 @@ nav{
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+        
         padding: 15px;
-        background-color: #323131;
+        
         
     
     }
