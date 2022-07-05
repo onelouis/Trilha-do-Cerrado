@@ -9,10 +9,11 @@ function Footer(){
     return(
         <div className="footer">
             <div className="rodape">
+                    
                 <div className="icones">
                     <li><GrFacebook/></li>
                     <li><VscTwitter/></li>
-                     <li><SiInstagram/></li>
+                    <li><SiInstagram/></li>
                 </div>
                 <div className="rede">
                     <span className="associação">Associação Rede Brasileira de Trilhas de longo Curso (Rede Trilhas)</span>

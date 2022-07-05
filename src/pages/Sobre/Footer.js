@@ -9,12 +9,14 @@ function Footer(){
     return(
         <div className="footer">
             <div className="rodape">
+            <div className="logSobre">
+                        <img src="/imagens/logoSobre.png" alt="logo" />
+                    </div>
+                   <br/>
                 <div className="icones">
-                
-                        <li><a><GrFacebook/></a></li>
-                        <li><a><VscTwitter/></a></li>
-                        <li><a><SiInstagram/></a></li>
-                    
+                    <li><GrFacebook/></li>
+                    <li><VscTwitter/></li>
+                    <li><SiInstagram/></li>
                 </div>
                 <div className="rede">
                     <span className="associação">Associação Rede Brasileira de Trilhas de longo Curso (Rede Trilhas)</span>

@@ -53,7 +53,7 @@ header{
     cursor: pointer;
     transition-duration: 0.5s;
 }
-img  {
+.toolbar img  {
     position:initial;
     display: flex;
     width: 80px;
@@ -501,9 +501,9 @@ nav{
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+       
         padding: 15px;
-        background-color: #323131;
+        
         
     
     }
@@ -515,11 +515,11 @@ nav{
         left: 214px;
         top: 687px;
         margin: 20px ;
-        color:#000000;
+        
         align-items:flex-end;
         margin: auto;
         padding: 15px;
-        background-color: #FFD600 ;
+       
         
     
     }
@@ -531,9 +531,9 @@ nav{
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+       
         padding: 15px;
-        background-color: #323131;
+        
         
     }
     
@@ -571,9 +571,9 @@ nav{
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+        
         padding: 15px;
-        background-color: #323131;
+        
         
     
     }
@@ -589,7 +589,7 @@ nav{
         align-items:flex-end;
         margin: auto;
         padding: 15px;
-        background-color: #FFD600 ;
+        
         
     
     }
@@ -601,9 +601,9 @@ nav{
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+        
         padding: 15px;
-        background-color: #323131;
+       
         
     }
     .amarela p{
@@ -668,9 +668,9 @@ nav{
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+       
         padding: 15px;
-        background-color: #323131;
+        
         
     
     }
@@ -682,9 +682,9 @@ nav{
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#323131;
+       
         padding: 15px;
-        background-color: #FFD600;
+        
     
     }
     .caixa3 {
@@ -695,9 +695,9 @@ nav{
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+        
         padding: 15px;
-        background-color: #323131;
+       
             
     
     }
@@ -787,9 +787,9 @@ nav{
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+        
         padding: 15px;
-        background-color: #323131;
+        
         
     
     }
@@ -801,11 +801,11 @@ nav{
         left: 214px;
         top: 687px;
         margin: 20px ;
-        color:#000000;
+        
         align-items:flex-end;
         margin: auto;
         padding: 15px;
-        background-color: #FFD600 ;
+      
         
     
     }
@@ -817,9 +817,9 @@ nav{
         left: 214px;
         top: 687px;
         align-items:flex-end;
-        color:#FFD600;
+        
         padding: 15px;
-        background-color: #323131;
+     
         
     
     }
