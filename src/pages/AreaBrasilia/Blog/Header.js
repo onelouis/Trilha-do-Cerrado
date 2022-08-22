@@ -9,18 +9,20 @@ function cabeca() {
            
                 <div className="toolbar">
                     <nav>
-                        <img src="/imagens/logo.png" alt="logo"/>
+                        <img src="/imagens/logo.png" alt="logo" id="lo"/>
                         <ul>
                                 <li>
                                     <Link to="/">INICIO</Link>
                                 </li>
-                                <li>BLOG</li>
+                                <li> 
+                                    <Link to="/Blog">BLOG</Link>
+                                </li>
                                 <li>
                                     <Link to="/Sobre">SOBRE</Link>
                                 </li>
-                                <li>SERVIÇOS</li>
+                                <li><a>SERVIÇOS</a></li>
                             </ul>
-                        <p><Link to="/Login">LOGIN</Link></p>
+                            <p><Link to="/Login">LOGIN</Link></p>
 
 
                     </nav>
@@ -28,7 +30,7 @@ function cabeca() {
             
                 <div className="Titulo texto-central">
                     <img src="/imagens/logo.png" alt="logo" id="logoLog"/>
-                    <p className="pLogin">Caminhos</p>
+                    <p className="pLogin">Blog</p>
                     <b className="p1Login">caminhos do planalto central</b>
             </div>   
          </header>

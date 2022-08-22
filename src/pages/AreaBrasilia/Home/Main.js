@@ -11,16 +11,16 @@ function Main() {
                 <div className="caixa1">
                     
                     <h1>
-                        <Link to="/AreaBrasilia">Area Brasilia</Link>
+                        <a><Link to="/AreaBrasilia">Area Brasilia</Link></a>
                     </h1>
                 </div>
                 <div className="caixa2">
                     <h1> 
-                        <Link to="/">Area Cafuringa</Link>
+                        <a><Link to="/">Area Cafuringa</Link></a>
                     </h1>  
                 </div>
                 <div className="caixa3">
-                    <h1> <Link to="/AreaUniao">Area União</Link>    </h1>    
+                    <h1> <a><Link to="/AreaUniao">Area União</Link>  </a>  </h1>    
                 </div>
             </div>
             <div className="trilhas">
@@ -29,22 +29,23 @@ function Main() {
              <div className="conteudo">
                 <div className="seções">
                     <div className="Localização">
-                        <img src="/imagens/vetor.png" alt="vetor" /><h1> Localização</h1>
+                        <img src="/imagens/vetor.png" alt="vetor"/><h1> Localização</h1>
                         <p>O arco cafuringa fica localizado na região de</p>
                     </div>
                     <div className="Dificuldade">
-                         <img src="/imagens/grafico.png" alt="grafico" /><h1> Dificuldade</h1>  
+                         <img src="/imagens/grafico.png" alt="grafico"/><h1> Dificuldade</h1>  
                          <p>O arco cafuringa fica localizado na região de</p>
                     </div>
                     <div className="Distancia">
-                         <img src="/imagens/distancia.png" alt="distancia" /><h1> Distancia</h1> 
+                         <img src="/imagens/distancia.png" alt="distancia"/><h1> Distancia</h1> 
                          <p>O arco cafuringa fica localizado na região de</p>   
                     </div>
                 </div>
                 <div >
-                    <iframe className="responsive-iframe " src="https://www.google.com/maps/d/embed?mid=147MG-4hX5TwVd0wgaQbb_pZL1-XTZcE&ehbc=2E312F" width="640" height="480" ></iframe>
-                                
-          zoom: 15,
+                    <iframe className="responsive-iframe "src="https://www.google.com/maps/d/u/0/embed?mid=1wlBUE0O1H7Al_a_ULzB8AyeeX3uaKuc&ehbc=2E312F"></iframe>
+
+                        
+                     
                 </div>
             </div>
             <div className="informações">
@@ -54,8 +55,8 @@ function Main() {
                         </div>
                         <div className="cinza">
                             
-                            <b className="b" >Area </b>
-                            <b className="b1">União</b>
+                            <b className="b" >Arco </b>
+                            <b className="b1">Cafuringa</b>
 
                         </div>
                         <div className="linha">
