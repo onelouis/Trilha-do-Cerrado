@@ -2,26 +2,33 @@ import React from "react";
 import {Link} from 'react-router-dom' 
 
 
+
 function Main() {
 
     return ( 
     
         <main className="main"> 
-            <div className="feed">
-                <div className="caixa1">
-                    
-                    <h1>
-                        <a><Link to="/AreaBrasilia">Area Brasilia</Link></a>
-                    </h1>
-                </div>
-                <div className="caixa2">
-                    <h1> 
-                        <a><Link to="/">Area Cafuringa</Link></a>
-                    </h1>  
-                </div>
-                <div className="caixa3">
-                    <h1> <a><Link to="/AreaUniao">Area União</Link>  </a>  </h1>    
-                </div>
+            <div className="feed-areabrasilia">
+                
+                    <div className="botao1">
+                        
+                         <Link to="/AreaBrasilia">
+                            <button type="button" class="areabrasilia ">Area Brasilia
+                            </button>
+                        </Link>
+                    </div>
+                    <div className="botao2">
+                        <Link to="/">
+                            <button type="button" class="areacafuringa">Area Cafuringa
+                            </button>
+                        </Link> 
+                    </div>
+                    <div className="botao3">
+                        <Link to="/AreaUniao">
+                            <button type="button" class="areauniao">Area União
+                            </button>
+                        </Link>  
+                    </div>
             </div>
             <div className="trilhas">
                 <b> Trilhas<img src="/imagens/linha.png" alt="linha"/></b> 
@@ -30,15 +37,15 @@ function Main() {
                 <div className="seções">
                     <div className="Localização">
                         <img src="/imagens/vetor.png" alt="vetor" /><h1> Localização</h1>
-                        <p>O arco cafuringa fica localizado na região de</p>
+                        <p>O trajeto iniciasse na pedra fundamental de Brasília e compoem regiões como Lago Paranoá, passando pela Ponte Juscelino Kubitschek, Eixo Monumental entre outros Durante a trilha</p>
                     </div>
                     <div className="Dificuldade">
                          <img src="/imagens/grafico.png" alt="grafico" /><h1> Dificuldade</h1>  
-                         <p>O arco cafuringa fica localizado na região de</p>
+                         <p>Diversidade de Topografias </p>
                     </div>
                     <div className="Distancia">
                          <img src="/imagens/distancia.png" alt="distancia" /><h1> Distancia</h1> 
-                         <p>O arco cafuringa fica localizado na região de</p>   
+                         <p>Trilha com a distancia de 85km</p>   
                     </div>
                 </div>
                 <div >
@@ -63,11 +70,16 @@ function Main() {
                         </div>     
                 </div>
                 <div className="amarela">
-                    <p >Com seus 150km, este arco se destaca no aspecto ambiental e 
-                        na cultura rural, religiosa e histórica da ocupação do nosso 
-                        território. Percorre ampla região com diversos atrativos naturais e os atributos 
-                        do Cerrado apresentam-se bem preservados. De topografia variada proporciona belas 
-                        paisagens e da mesma forma, conecta várias Unidades de Conservação.</p>
+                    <p >Percurso de 85km, de viés cívico, histórico e cultural, cujo principal 
+                        atrativo é o Eixo Monumental de Brasília, Patrimônio Cultural da 
+                        Humanidade, com seus elementos arquitetônicos, culturais e paisagísticos
+                        , incluindo o centro da cidade e seu traçado urbano singular, os 
+                        palácios e monumentos, sobretudo de Niemeyer, as obras de arte e o 
+                        paisagismo, os mirantes e o belo pôr do sol, bem como os diversos 
+                        espaços culturais de Brasília. Além do Eixo, o Arco Brasília passa pelo
+                         Córrego do Meio, Ribeirão Sobradinho, Lago Paranoá entre a Barragem, 
+                         a Ermida Dom Bosco e a Ponte JK e pelo Parque Nacional de Brasília com
+                          as Trilhas Cristal Água até chegar aos Caminhos da Flona..</p>
                     <img src="/imagens/image 3.png" alt="imagem 3"/>
                     
                 </div>
