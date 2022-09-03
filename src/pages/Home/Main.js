@@ -30,15 +30,15 @@ function Main() {
                 <div className="seções">
                     <div className="Localização">
                         <img src="/imagens/vetor.png" alt="vetor"/><h1> Localização</h1>
-                        <p>O arco cafuringa fica localizado na região de</p>
+                        <p></p>
                     </div>
                     <div className="Dificuldade">
                          <img src="/imagens/grafico.png" alt="grafico"/><h1> Dificuldade</h1>  
-                         <p>O arco cafuringa fica localizado na região de</p>
+                         <p></p>
                     </div>
                     <div className="Distancia">
                          <img src="/imagens/distancia.png" alt="distancia"/><h1> Distancia</h1> 
-                         <p>O arco cafuringa fica localizado na região de</p>   
+                         <p></p>
                     </div>
                 </div>
                 <div >
@@ -64,11 +64,9 @@ function Main() {
                         </div>     
                 </div>
                 <div className="amarela">
-                    <p >Com seus 150km, este arco se destaca no aspecto ambiental e 
-                        na cultura rural, religiosa e histórica da ocupação do nosso 
-                        território. Percorre ampla região com diversos atrativos naturais e os atributos 
-                        do Cerrado apresentam-se bem preservados. De topografia variada proporciona belas 
-                        paisagens e da mesma forma, conecta várias Unidades de Conservação.</p>
+                    <p >O Arco Cafuringa - Trilha de 146km, que destaca o aspecto ambiental, a cultura rural, religiosa e histórica.
+                        Percorre ampla região com diversos atrativos naturais e os atributos do Cerrado bem preservados,
+                        topografia variada, belas paisagens e conectando várias Unidades de Conservação da região.</p>
                     <img src="/imagens/image 3.png" alt="imagem 3"/>
                     
                 </div>

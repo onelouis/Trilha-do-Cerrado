@@ -54,7 +54,7 @@ function Main() {
                         </div>
                         <div className="cinza">
                             
-                            <b className="b" >Area </b>
+                            <b className="b" >Arco </b>
                             <b className="b1">Brasilia</b>
 
                         </div>
@@ -63,11 +63,16 @@ function Main() {
                         </div>     
                 </div>
                 <div className="amarela">
-                    <p >Com seus 150km, este arco se destaca no aspecto ambiental e 
-                        na cultura rural, religiosa e histórica da ocupação do nosso 
-                        território. Percorre ampla região com diversos atrativos naturais e os atributos 
-                        do Cerrado apresentam-se bem preservados. De topografia variada proporciona belas 
-                        paisagens e da mesma forma, conecta várias Unidades de Conservação.</p>
+                    <p >
+                        O Arco Brasília - Percurso de 85km, de viés cívico, histórico e cultural, cujo principal
+                        atrativo é o Eixo Monumental de Brasília, Patrimônio Cultural da Humanidade, com seus elementos
+                        arquitetônicos, culturais e paisagísticos, incluindo o centro da cidade e seu traçado urbano
+                        singular, os palácios e monumentos, sobretudo de Niemeyer, as obras de arte e o paisagismo,
+                        os mirantes e o belo pôr do sol, bem como os diversos espaços culturais de Brasília.
+                        Além do Eixo, o Arco Brasília passa pelo Córrego do Meio, Ribeirão Sobradinho, Lago Paranoá
+                        entre a Barragem, a Ermida Dom Bosco e a Ponte JK e pelo Parque Nacional de Brasília com as
+                        Trilhas Cristal Água até chegar aos Caminhos da Flona.
+                    </p>
                     <img src="/imagens/image 3.png" alt="imagem 3"/>
                     
                 </div>

@@ -30,15 +30,15 @@ function Main() {
                 <div className="seções">
                     <div className="Localização">
                         <img src="/imagens/vetor.png" alt="vetor"/><h1> Localização</h1>
-                        <p>O arco cafuringa fica localizado na região de</p>
+                        <p></p>
                     </div>
                     <div className="Dificuldade">
                          <img src="/imagens/grafico.png" alt="grafico"/><h1> Dificuldade</h1>  
-                         <p>O arco cafuringa fica localizado na região de</p>
+                         <p></p>
                     </div>
                     <div className="Distancia">
                          <img src="/imagens/distancia.png" alt="distancia"/><h1> Distancia</h1> 
-                         <p>O arco cafuringa fica localizado na região de</p>   
+                         <p></p>
                     </div>
                 </div>
                 <div >
@@ -54,7 +54,7 @@ function Main() {
                         </div>
                         <div className="cinza">
                             
-                            <b className="b" >Area </b>
+                            <b className="b" >Arco </b>
                             <b className="b1">União</b>
 
                         </div>
@@ -63,11 +63,12 @@ function Main() {
                         </div>     
                 </div>
                 <div className="amarela">
-                    <p >Com seus 150km, este arco se destaca no aspecto ambiental e 
-                        na cultura rural, religiosa e histórica da ocupação do nosso 
-                        território. Percorre ampla região com diversos atrativos naturais e os atributos 
-                        do Cerrado apresentam-se bem preservados. De topografia variada proporciona belas 
-                        paisagens e da mesma forma, conecta várias Unidades de Conservação.</p>
+                    <p >
+                        O Arco União - Trajeto de 80km com rico valor paisagístico, cultural, místico e gastronômico.
+                        É possível encontrar no percurso diversos espaços para vivência espiritual, boa alimentação e
+                        contato com manifestações culturais. Aqui o público encontrará a Torre Digital: símbolo dos
+                        Caminhos do Planalto Central.
+                    </p>
                     <img src="/imagens/image 3.png" alt="imagem 3"/>
                     
                 </div>
