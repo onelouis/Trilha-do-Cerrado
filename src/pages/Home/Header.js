@@ -1,7 +1,10 @@
 import React from "react";
-import {Link} from 'react-router-dom' 
+import {Link} from 'react-router-dom'
+import {ReactKeycloakProvider} from "@react-keycloak/web";
+import { useKeycloak } from "@react-keycloak/web";
 
 function Header() {
+    const { keycloak, initialized } = useKeycloak();
     return ( 
         <div>
         <header className="headers">
@@ -19,7 +22,15 @@ function Header() {
                                 </li>
                                 <li><a>SERVIÇOS</a></li>
                             </ul>
-                            <p><Link to="/Login">LOGIN</Link></p>
+                            <p>{!keycloak.authenticated && (
+                                <button
+                                    type="button"
+                                    className="text-blue-800"
+                                    onClick={() => keycloak.login()}
+                                >
+                                    Login
+                                </button>
+                            )}</p>
 
                             
                     </nav>
