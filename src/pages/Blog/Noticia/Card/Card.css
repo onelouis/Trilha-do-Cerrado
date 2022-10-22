@@ -1,0 +1,5 @@
+.cardFundo{
+    display: flex;
+    background-color: cornflowerblue;
+    height: 26vh;
+}

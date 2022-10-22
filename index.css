@@ -1,0 +1,211 @@
+/*
+.foto{
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 75vh;
+    right: 0px;
+}
+
+#info {
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+}
+
+.text{
+    position: absolute;
+    width: 50%;
+    height: 75vh;
+}
+#a{
+    position: absolute;
+    font-size: 9vh;
+    right: 0px;
+    top: 20%;
+    font-weight: bolder;
+}
+.amarelo{
+    position: absolute;
+    width: 23%;
+    height: 25%;
+    top: 7vh;
+    left: 13vw;
+    background-color: #E7CD10;
+}
+
+.meio{
+    position: absolute;
+    background-color: #323131;
+    top: 120%;
+    width: 65%;
+    height: 100vw;
+
+}
+
+
+.post{
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    color: black;
+    border-radius: 5px;
+    background-color: white;
+
+}
+.post img{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    margin-left: 8px;
+    margin-right: 15px;
+    margin-top: 5px;
+    object-fit: cover;
+}
+*/
+
+.topo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.text{
+    width: 50%;
+    left: 22%;
+    top: 8vh;
+    font-size: 6vw;
+}
+
+.foto {
+    right: 0px;
+}
+
+
+.amarelo{
+    position: absolute;
+    width: 12vw;
+    height: 120px;
+    background-color: yellow;
+}
+
+
+#info {
+    width: 50vw;
+    margin-left: 0px;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.topo{
+    width: 100%;
+}
+
+.fundoText{
+    width: 70%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 30px;
+
+}
+.blogBloco{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.corpo{
+    width: 70%;
+    background-color: #323131;
+}
+
+.fundoText2{
+    width: 70%;
+    margin-left: auto;
+    margin: auto;
+    font-size: 18px;    
+}
+
+.corpo2{
+    margin-left: 30%;
+    width: 70%;
+    background-color: #323131;
+}
+
+.amarelo2{
+    position: absolute;
+    width: 15vw;
+    height: 8vh;
+    right: 0px;
+    background-color: yellow;
+}
+
+.Blogcomentario{
+    display: flex;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.Bl{
+    height: 100px;
+    padding-top: 10px;
+}
+
+.blogBtn{
+    float: right;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 12px 36px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 16px;
+
+}
+
+.BlogComentario-texto {
+    color: black;
+    margin-left: 10px;
+}
+
+.BlogComentario-botao {
+    border: none;
+}
+
+@media screen and (min-width: 200px){
+    .text{
+        top: 3vh;
+    }
+
+    .amarelo{
+        width: 10vw;
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .text{
+        top: 12vh;
+        font-size: 5vw;
+    }
+
+    .amarelo{
+        width: 10.5vw;
+        height: 110px;
+    } 
+    
+}
+
+@media screen and (min-width: 1300px){
+    .Blogcomentario{
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        background-color: white;
+        border-radius: 5px;
+    }
+}

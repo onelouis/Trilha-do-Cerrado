@@ -1,0 +1,182 @@
+{
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "Porque não pode entrar noparque nacional",
+      "imagemUrl": "/imagens/noticia.png"
+    },
+    {
+      "id": 2,
+      "titulo": "Festa dos morangos",
+      "imagemUrl": "/imagens/noticia.png"
+    },
+    {
+      "id": 3,
+      "titulo": "Expedição dia 18",
+      "conteudo": "O parque não pode ser acessado pois, é uma area de preservação onde se concontra diversicada, fauna e flora O parque não pode ser acessado pois, é uma area de preservação onde se concontra diversicada, fauna e floraO parque não pode ser acessado pois, é",
+      "imagemUrl": "https://brasilturis.com.br/wp-content/uploads/2020/01/13_01_20_caminhos-696x463.jpg"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "comment": "TELA HD",
+      "noticiaId": 1,
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "comment": "Estão deliciosos",
+      "noticiaId": 2,
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "comment": "de R$ 599,90 \n por R$246,05à vista \n (5% de desconto) \n ou R$ 259,00 em 5x de R$ 51,80 sem juros",
+      "noticiaId": 1,
+      "userId": 2
+    },
+    {
+      "userId": 2,
+      "promotionId": 1,
+      "comment": "Hey ho",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "promotionId": 1,
+      "comment": "Test",
+      "parentId": 3,
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "promotionId": 1,
+      "comment": "sub resposta",
+      "parentId": 4,
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "promotionId": 1,
+      "comment": "resposta tela hd",
+      "parentId": 1,
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "resposta",
+      "parentId": 2,
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "nova resposta",
+      "parentId": 2,
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "test",
+      "parentId": 7,
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "test",
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "test",
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "comment": "post\n",
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "comment": "ddddd",
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "comment": "mirella é muito gorda. mirella é muito gorda. mirella é muito gorda. mirella é muito gorda. mirella é muito gorda. mirella é muito gorda. mirella é muito gorda. mirella é muito gorda. mirella é muito gorda. mirella é muito gorda. mirella é muito gorda. mirella é muito gorda. mirella é muito gorda. mirella é muito gorda. mirella é muito gorda. mirella é muito gorda. mirella é muito gorda. mirella é muito gorda. mirella é muito gorda. mirella é muito gorda. mirella é muito gorda. mirella é muito gorda. ",
+      "id": 16
+    },
+    {
+      "userId": 1,
+      "comment": "oi mi ",
+      "id": 17
+    },
+    {
+      "userId": 1,
+      "comment": "oi mi ",
+      "id": 18
+    },
+    {
+      "userId": 1,
+      "comment": "marcia foifnha",
+      "id": 19
+    },
+    {
+      "userId": 1,
+      "comment": "",
+      "id": 20
+    },
+    {
+      "userId": 1,
+      "comment": "pedro",
+      "id": 21
+    },
+    {
+      "userId": 1,
+      "comment": "pedro",
+      "id": 22
+    },
+    {
+      "userId": 1,
+      "comment": "",
+      "id": 23
+    },
+    {
+      "userId": 1,
+      "comment": "gislane",
+      "id": 24
+    },
+    {
+      "userId": 1,
+      "comment": "gislane",
+      "id": 25
+    },
+    {
+      "userId": 1,
+      "comment": "duplicata",
+      "id": 26
+    },
+    {
+      "userId": 1,
+      "comment": "alensmas",
+      "id": 27
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Phillip Jacobs",
+      "avatarUrl": "https://yt3.ggpht.com/qB-nQZG1GLBnnMRmaFBMc_BRM96i9RaDyoxvxs6WRuQE6UHWO1IsqqDTgHivNFv2-Qmp_NCP5A=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "id": 2,
+      "name": "Todd Mitchell",
+      "avatarUrl": "https://randomuser.me/api/portraits/men/16.jpg"
+    }
+  ]
+}
