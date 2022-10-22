@@ -4,12 +4,11 @@ import BlogNoticiaModal from "./Modal/Modal";
 import NoticiasModal from "./Modal/LogicaModal";
 import {NoticiasModalCommentsTree} from "./Modal/CommentsTree/CommentsTree";
 import useApi from "../../Utils/useApi";
-import UserCard from "./UserCard/UserCasrd";
 
 function Main (){
     const [isModalVisible, setIsModalVisible, noticiaId] = useState(false);
     const commentsTree = useRef(null)
-    const [isActive, setIsActive] = useState(false)
+    const [isActive, setIsActive] = useState([])
     const onClick2 = () => setIsActive(!isActive)
 
     const [load, loadInfo] = useApi ({
@@ -122,7 +121,36 @@ function Main (){
                 <div className="BlogEstruturaComentarios">
                     <div className="BlogEstruturaComentarios-1">
                         {loadInfo.data.map((item) => (
-                       <UserCard  avatarUrl={item.user.avatarUrl} name={item.user.name} comment={item.comment} />
+                        <div >
+                            <div className="Blogcomentario">
+                                <img src={item.user.avatarUrl}  id="imgComentarios"></img>
+                                
+                                <div className="BlogComentario-texto"> 
+                                    <span>{item.user.name}</span>
+                                    <div className="BlogFundoComentario">
+                                        <p>{item.comment}</p>
+                                    </div>
+                                    <textarea 
+                                        type='text'  
+                                        placeholder='comentar' 
+                                        className="BlogCaixa-Comentario">
+                                    </textarea>
+                                    <button 
+                                        className="BlogComentario-botao">
+                                        Comentar
+                                    </button> 
+                                    <button
+                                        id={"id"+item.id}
+                                        className="blogBtnArvoreComentarios"
+                                        onClick={onClick2}>
+                                    comentarios</button>
+                                   
+                                </div>
+                            </div>
+                            <div className={`tree ${isActive ? "active" : "inactive" }`} ref={commentsTree}
+                                    
+                                    ></div>
+                        </div>
                         ))} 
                         
                     </div>
