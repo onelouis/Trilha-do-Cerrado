@@ -12,8 +12,6 @@ const BlogNoticiaModal = ({ id = 'modal', onClose =() => {}, children}) => {
   return (
     <div id={id} className="modal-blog"onClick={HandleOutsideClick}>
       <div className="conteiner">
-      <div className='ModalForma'></div>
-
         <button className='modal__close-button' 
           onClick={onClose}>X</button>
             <div className='fundoImgBlogModal'>

@@ -131,38 +131,61 @@ function Main (){
                     )
             }
           
-           
-
-            <div className="corpo2">
-            <div className="comentariosAuxiliares-2">
-                <div className="amarelo3"></div>
-                    {loadInfo.data
-                                .filter(function(carrega){ 
-                                    return carrega.id <= 3 ;   
-                                }) 
-                                .map((item) => 
-                                    (
-                                        <Card
-                                            imagemUrl = {item.user.avatarUrl}
-                                            nome = {item.user.name}
-                                            comment = {item.comment}
-                                        ></Card>
-                                    )
-                                    )
-                                }
-
-                </div>      
-                <div className="blogFundoDoTexto">
-                    <div className="fundoText2">
-                        <p>
-                        O ato de sinalizar um caminho, indicando a direção correta a seguir, é tão antigo quanto a própria história da humanidade. Índios nas Américas, peregrinos cristãos na Europa Medieval e bandeirantes no Brasil já se utilizavam de marcações feitas em pedras e árvores para alcançarem seus destinos.
-                        As recentes ações de sinalização das trilhas brasileiras vão justamente ao encontro de um movimento de sucesso que ecoa mundo afora, onde essas trilhas são usadas como poderosos aparelhos de recreação e educação ambiental, além de uma ótima ferramenta para a conservação do meio ambiente e uma alternativa para gerar de emprego e renda por onde elas passam.
-                        </p>
-                    </div>
-                </div>
-               
-
-            
+            <div>
+            {loadnews.data
+                    .filter(function(carrega){ 
+                        return carrega.id ===  parseInt(params.id);   
+                    }) 
+                    .map((item) => 
+                    (
+                        <div>                
+                            <div className="blogBloco2">
+                                <div className="corpo">
+                                    <div className="corpoImagens">
+                                        <img src="/imagens/mapa.png"></img>
+                                        <img src="/imagens/arvore.png"></img>
+                                        <img src="/imagens/bike.png"></img>
+                                        <img src="/imagens/bulssola.png"></img>
+                                        <img src="/imagens/spot.png"></img>
+                                        <img src="/imagens/lupa.png"></img>
+                                    </div>
+                                    <div className="fundoText">
+                                        <p>{item.conteudo}</p>
+                                    </div>
+                                    <div className="corpoImagens2">
+                                        <img src="/imagens/mapa.png"></img>
+                                        <img src="/imagens/arvore.png"></img>
+                                        <img src="/imagens/bike.png"></img>
+                                        <img src="/imagens/bulssola.png"></img>
+                                        <img src="/imagens/spot.png"></img>
+                                        <img src="/imagens/lupa.png"></img>
+                                    </div>         
+                                </div>
+                
+                                <div className="comentariosAuxiliares">
+                                    <div className="blocoAmareloFundo"></div>
+                                        {loadInfo.data
+                                                    .filter(function(carrega){ 
+                                                        return carrega.id > 3 && carrega.id <= 6;   
+                                                    }) 
+                                                    .map((item) => 
+                                                        (
+                                                            <Card
+                                                                id = {item.id}
+                                                                imagemUrl = {item.user.avatarUrl}
+                                                                nome = {item.user.name}
+                                                                comment = {item.comment}
+                                                            ></Card>
+                                                        )
+                                                        )
+                                                    }
+                                </div>
+                            </div>
+                        </div>
+   
+                    )
+                    )
+            }
             </div>
 
             <div className="Blogcomentarios">
