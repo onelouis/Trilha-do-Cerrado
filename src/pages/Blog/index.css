@@ -27,7 +27,19 @@
     position: absolute;
     width: 65%;
     height: 100%;
+    background-color: #D0D0D0;
+    cursor: pointer;
+    text-decoration: none;
 }
+
+.link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
 
 #news{
     width: 100%;
@@ -91,9 +103,22 @@
     height: 25vh;
     top: 35%;
     margin-left: 7px;
+    object-fit: cover;
     
 }
 
+#titulo2{
+    position: absolute;
+    color: black;
+    top: 35%;
+    font-size: 1vw;
+    left: 48%;
+
+}
+
+#news3{
+    object-fit: cover;
+}
 #text3{
     position: absolute;
     color: black ;

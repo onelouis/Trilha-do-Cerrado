@@ -1,5 +1,19 @@
 .cardFundo{
-    display: flex;
-    background-color: cornflowerblue;
-    height: 26vh;
+    position: absolute;
+    position: inherit;
+    margin: 20px;
+
+}
+
+#id1{
+    right: 14%;
+
+}
+
+#id2{
+    right: 5%;
+}
+
+#id3{
+    left: 5%;
 }

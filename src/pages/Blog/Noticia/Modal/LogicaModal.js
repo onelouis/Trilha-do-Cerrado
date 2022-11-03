@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import BlogNoticiaModal from './Modal';
 import useApi from '../../../Utils/useApi';
-import NoticiasModalCommentsTree from './CommentsTree/CommentsTree';
 import './Modal.css';
 
 const NoticiasModal = ({noticiaId}) =>{
@@ -39,13 +38,19 @@ const NoticiasModal = ({noticiaId}) =>{
     
     return(
         <BlogNoticiaModal>
-            <form className='noticia-modal__comment-form' onSubmit={onSubmit}>
-                <textarea 
-                    placeholder='comentar...' 
-                    onChange={(ev) => setComment(ev.target.value)} 
-                    value={comment}
+            <form className='noticia-modal__comment-form' onSubmit={onSubmit}>  
+                <div className='ModalBlogTextos'>
+                    <p className='ModalBlogTextosMain'>Adicione um comentario a esta noticia</p>
+                    <p className='ModalBlogTextosSecundary'>Porfavor digite seu comentario </p>
+                    <textarea 
+                        placeholder='comentar...' 
+                        onChange={(ev) => setComment(ev.target.value)} 
+                        value={comment}
                     ></textarea>
-                <button type='submit' className='ModalEnviar'>Enviar</button>
+                </div>
+                <div className='contentModalButtoes'>
+                    <button type='submit' className='ModalEnviar'>Comentar</button>
+                </div>
             </form>
         </BlogNoticiaModal>
     )

@@ -1,38 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap');
+
 img{
     margin-left: 0px;
 }
 
+.blogPagina{
+    margin-left: 150px;
+    margin-right: 150px;
+}
 .topo{
     display: flex;
-    justify-content: center;
+    position: relative;
     width: 100%;
     height: 100%;
 }
+
 .text{
-    width: 50%;
-    left: 22%;
-    top: 8vh;
-    font-size: 6vw;
+    position: absolute;
+    width: 60%;
+    left: 5%;
+    font-size: 4vw;
+    font-family: 'League Spartan', sans-serif;
 }
+
+#palavras1{
+    position: relative;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
 
 .foto {
-    right: 0px;
+    display: flex;
+    width: 100%;
 }
 
+.conteiner-hidden{
+    width: 50.50%;
+    height: 100%;
+}
+
+.conteiner-foto{
+    object-fit: fill;
+    width: 100%;
+}
 
 .amarelo{
     position: absolute;
-    width: 12vw;
-    height: 120px;
-    background-color: yellow;
+    width: 10vw;
+    height: 100px;
+    top: 0px;
+    background-color: #FFD600;
 }
 
 
 #info {
-    width: 50vw;
-    margin-left: 0px;
-    border-radius: 3px;
+    width: 100%;
     object-fit: cover;
+    object-position: center
 }
 
 .topo{
@@ -46,6 +71,14 @@ img{
     line-height: 30px;
 
 }
+
+.fundoText{
+    display: flex;
+    text-align: justify;
+    margin-top: 10px;
+    align-items: center;
+}
+
 .blogBloco{
     display: flex;
     position: relative;
@@ -53,31 +86,69 @@ img{
 }
 
 .corpo{
+    display: flex;
     width: 70%;
     background-color: #323131;
+}
+
+.corpoImagens img {
+    margin: 10px;
+    width: 30%;
+}
+
+.corpoImagens2 {
+    margin-top: 100%;
+}
+
+
+.corpoImagens2 img{
+    margin: 10px;
+    width: 30%;
+}
+.blogFundoDoTexto{
+    width: 100%;
+    background-color: #323131;
+
 }
 
 .fundoText2{
     width: 70%;
     margin-left: auto;
     margin: auto;
-    font-size: 18px;    
+    font-size: 18px;
+}
+
+.fundoText2 p {
+    text-align: justify;
+    margin-top: 20px;
 }
 
 .corpo2{
-    margin-left: 30%;
-    width: 70%;
-    background-color: #323131;
+    display: flex;
+    width: 100%;
 }
 
+.comentariosAuxiliares{
+    position: relative;
+}
+.comentariosAuxiliares-2{
+    position: relative;
+}
 .amarelo2{
     position: absolute;
-    width: 15vw;
-    height: 8vh;
+    width: 18vw;
+    height: 10vh;
     right: 0px;
-    background-color: yellow;
+    background-color: #FFD600;
 }
 
+.amarelo3{
+    position: absolute;
+    width: 18vw;
+    height: 10vh;
+    left: 0px;
+    background-color: #FFD600;
+}
 
 .Blogcomentario{
     display: flex;
@@ -100,6 +171,7 @@ img{
     text-align: center;
     text-decoration: none;
     margin-left: 30px;
+    margin-top: 10px;
     font-size: 16px;
 
 }
@@ -211,13 +283,6 @@ img{
     background-color: white;
 }
 
-.BackgroundMaisNoticias-main img{
-    width: 50%;
-    height: 100%;
-    border-radius: 15px 0px 0px 15px;
-    padding: 10px;
-    object-fit: contain;
-}
 
 
 .BackgroundMaisNoticias-secundary{
@@ -260,14 +325,10 @@ img{
 }
 @media screen and (min-width: 200px){
     .text{
-        top: 3vh;
+        margin-top: 3vh;
     }
 
-    .amarelo{
-        width: 10vw;
-        height: 60px;
-    }
-
+   
     .Blogcomentario{
         margin-bottom: 10px;
     }
@@ -281,13 +342,9 @@ img{
 @media screen and (min-width: 900px){
     .text{
         top: 12vh;
-        font-size: 5vw;
     }
 
-    .amarelo{
-        width: 10.5vw;
-        height: 110px;
-    } 
+  
     
     .BlogEstruturaComentarios-2{
         margin-left: 20px;

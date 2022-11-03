@@ -20,7 +20,7 @@ const Rotas = () => {
                 <Route path="/Blog" element={<Blog/>}></Route>
                 <Route path="/AreaBrasilia" element={<AreaBrasilia/>}></Route>
                 <Route path="/AreaUniao" element={<AreaUniao/>}></Route>
-                <Route path='/Blog/noticia' element={<Blognoticia/>}></Route>
+                <Route path='/Blog/noticia/:id' element={<Blognoticia/>}></Route>
 
             </Routes>         
             
