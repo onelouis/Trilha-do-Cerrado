@@ -1,71 +1,140 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
+import BlogNoticiaModal from "./Noticia/Modal/Modal";
+import BlogNovaMateria from "./BlogNovaMateria/BlogNovaMateria";
+import CommentNews from "./Noticia/CommentNews/CommentNews";
+import useApi from "../Utils/useApi";
+import { Select } from "@chakra-ui/react";
 
 function Main(){
+    const [isModalVisible, setIsModalVisible, noticiaId] = useState(false);
+    const [tipoNoticia, setTipoNoticia] = useState(() =>{
+        return 'Noticia'});
+    
+    
+    
+    const [load_news,loadnews] = useApi ({
+        url: '/noticias',
+        params:{
+        }
+    });
+
+    useEffect(() => {
+        load_news();
+    }, []);
+
+    if (!loadnews.data){
+        return <div>Carregando</div>
+    }
+
+    function alterar(tipo){
+        load_news();
+        return setTipoNoticia(tipo)
+        
+    }
+
+    function carregaNoticias(){
+        {load_news.data
+            .filter(function(carrega){
+                for(let i = 0; i < 4; i++){
+                    return carrega.id === i
+                }   
+            })
+            .map((item) =>
+            (
+
+                <a href="/Blog/noticia/i" className="link">
+                <CommentNews
+                    imagemUrl = {item.imagemUrl}
+                    titulo = {item.titulo}
+                    conteudo = {item.conteudo}
+                ></CommentNews>
+                </a>
+            ))}
+
+   
+
+    }
+    
+
+
+
+    
     return(
         <body className="body">
-            <div>
-
+            <div >
+                <div>
+                    <button className="BlogAdicionarNovasMaterias" 
+                            onClick={() => setIsModalVisible(true)}>nova materia
+                    </button>
+                    {isModalVisible ? (<BlogNoticiaModal onClose={() => setIsModalVisible(false)}>
+                                            <BlogNovaMateria noticiaId={noticiaId}>
+                                                
+                                            </BlogNovaMateria>
+                                    </BlogNoticiaModal>) :null}
+                </div>
                 <div className="Principal">
                     <div className="fundo"></div>
                     <div className="noticia">
 
                         <div className="noticiaP">
-                            <div className="np1">
-                                <p id="tit">Principais</p>
-                                <p id="tita">posts</p>
-                                <img src="https://1.bp.blogspot.com/-WVh_g5p0Igc/XWQ7Mwkn21I/AAAAAAAANls/0B0HioQX8igeesTHq41sPMHlhdRl7IEswCLcBGAs/s1600/strawberries-1452717.jpg" id='news2'></img>
-                                <a href="/Blog/noticia/2" className="link">
-                                    <strong><p id="text2">Festa dos morangos</p></strong>
-                                </a>
-                                <p id="text3">A importancancia da preservação. Nos dias
-                                atuais vem se tornando cada vez mais importante a </p>
-                            </div>
-
-                            <div className="np2">
-                                <img src="http://especiais-pio.clicrbs.com.br/amadoresesporte/12/assets/images/00d385e8-2846x1894.jpg" id="news3"></img>
-                                <a href="/Blog/noticia/5" className="link">
-                                    <strong><p id="titulo2">Clube de motocross</p></strong>
-                                </a>
-                            </div>
-
-                            <div className="np3">
-                                <img src="/imagens/news2.png" id='news4'></img>
-                                <a href="/Blog/noticia/4" className="link">
-                                    <strong><p id="text4">A importancancia da preservação</p></strong>
-                                    <p id="text5">A importancancia da preservação. Nos dias
-                                    atuais vem se tornando cada vez mais importante a </p>
-                                </a>
-                            </div>
-                        
-
+                            <p id="tit">Principais Posts</p>
+                            {loadnews.data
+                                    .filter(function(carrega){
+                                        return carrega.id > 1 && carrega.id <= 4;   
+                                    }).map((item) =>
+                                    (  
+                                        <div className="noticiaPNoticias">
+                                            <div>
+                                                <img className="newsPrincipaisPequenas" src={item.imagemUrl}></img>
+                                            </div>
+                                            <a href="/Blog/noticia/2" className="linkNoticiasPrincipaisPequenas">
+                                                <strong><p className="tituloNoticiasPequenas">{item.titulo}</p></strong>
+                                                <p className="text3">{item.conteudo}</p>
+                                            </a>
+                                            
+                                        </div>
+                            ))}
+        
                         </div>
-                        
-                        <a href="/Blog/noticia/1" className="link">
-                            <div className="noticiaG">
-                                <img src="/imagens/noticia.png" id="news"></img>
-                                <p id="text">Porque não pode entrar no parque nacional </p>
-                            </div>
-                        </a>
-                    </div>
+                            {loadnews.data
+                                .filter(function(carrega){
+                                    return carrega.id === 1;   
+                            }).map((item) =>
+                                (  
+                                <a href="/Blog/noticia/1" className="link">
+                                    <div className="noticiaG">
+                                        <img src={item.imagemUrl} id="news"></img>
+                                        <p id="text">{item.titulo}</p>
+                                    </div>
+                                </a>
+                            ))}
+                        </div>
 
                 </div>
-
+                
             </div>
 
             <div className="barra">
-                <div className="eventos">
+                <div className="eventos"  >
+                    <button onClick={() => alterar('Evento')}>
                     <img src="/imagens/Vector.png" id="vector"></img>
                     <p id="txtbarra">Eventos</p>
+                    </button>
+                    <h3>{tipoNoticia}</h3>
                 </div>
 
                 <div className="artigos">
-                    <img src="/imagens/Vector2.png" id="vector2"></img>
-                    <p id="txtbarra">Artigos</p>
+                    <button onClick={() => alterar('Artigo')}>
+                        <img src="/imagens/Vector2.png" id="vector2"></img>
+                        <p id="txtbarra">Artigos</p>
+                    </button>
                 </div>
 
                 <div className="noticias">
-                <img src="/imagens/Vector3.png" id="vector3"></img>
+                <button onClick={() => alterar('Noticia')}>
+                    <img src="/imagens/Vector3.png" id="vector3"></img>
                     <p id="txtbarra">Noticias</p>
+                </button>
                 </div>
 
             </div>
@@ -76,53 +145,56 @@ function Main(){
             </div>
 
             <div className="principal2">
-              
-
                 <div className="sub">
-                        <div className="maior">
-                            <div className="blocoAmarelo"></div>
-                            <img src="/imagens/queimada.png" id="queimadas"></img>
-                            <p id="perigo"><b>O perigo das queimadas</b></p>
-                            <p id="perigoSub">O parque não pode ser acessado pois, 
-                            é uma area de preservação onde se concontra diversicada, 
-                            fauna e flora O parque não pode ser acessado pois, 
-                            é uma area de preservação onde se concontra diversicada, 
-                            fauna e floraO parque não pode ser acessado pois, é </p>
-                            <a href="/Blog/noticia/6" className="link">
-                                <button type="button" class="efeito efeito-3">Materia completa</button>
+                    {loadnews.data
+                        .filter(function(carrega){
+
+                            return  tipoNoticia === carrega.tipoNoticia  
+                        }).map((item) =>(
+                            <div className="maior">
+                                <div className="blocoAmarelo"></div>
+                                <img src={item.imagemUrl} id="queimadas"></img>
+                                <p id="perigo"><b>{item.titulo}</b></p>
+                                <p id="perigoSub">{item.conteudo}</p>
+                                <a href={"/Blog/noticia/"+ item.id} className="link">
+                                    <button type="button" class="efeito efeito-3">Materia completa</button>
+                                </a>
+                            </div>
+                        ))}
+                    
+                    {loadnews.data
+                        .filter(function(carrega){
+                            return  tipoNoticia === carrega.tipoNoticia
+                        }).map((item) =>(
+                            <div className="menorS">
+                                <div className="blocoAmarelo2"></div>
+                                <img src={item.imagemUrl} id="explorar"></img>
+                                <p id="txtExpe">{item.titulo}</p>
+                                <p id="txtExpe2">{item.conteudo}</p>
+                                <a href={"/Blog/noticia/"+ item.id} className="link">
+                                    <button type="button" class="efeito2 efeito-3">Materia completa</button>
                             </a>
+                            </div>
+                        ))}
 
-
-                        </div>
+                    {loadnews.data
+                        .filter(function(carrega){
                         
-                        <div className="menorS">
-                            <div className="blocoAmarelo2"></div>
-                            <img src="/imagens/explorar.png" id="explorar"></img>
-                            <p id="txtExpe">Expedição dia 18</p>
-                            <p id="txtExpe2">O parque não pode ser acessado pois, 
-                            é uma area de preservação onde se concontra diversicada, 
-                            fauna e flora O parque não pode ser acessado pois,
-                             é uma area de preservação onde se concontra diversicada,
-                             fauna e floraO parque não pode ser acessado pois, é </p>
-                            <a href="/Blog/noticia/3" className="link">
-                                <button type="button" class="efeito2 efeito-3">Materia completa</button>
-                            </a>
-                        </div>
+                            return  carrega.id === 1
+                        }).map((item) =>(
+                            <div className="menorI">
+                                <div className="blocoAmarelo3"></div>
+                                <img src={item.imagemUrl} id="noti"></img>
+                                <p id="txtExpe">{item.titulo}</p>
+                                <p id="txtExpe2">{item.conteudo}</p>
+                                <a href={"/Blog/noticia/"+ item.id} className="link">
+                                    <button type="button" class="efeito2 efeito-3">Materia completa</button>
+                                </a>
 
-                        <div className="menorI">
-                            <div className="blocoAmarelo3"></div>
-                            <img src="/imagens/noticia.png" id="noti"></img>
-                            <p id="txtExpe">Parque nacional de Brasília </p>
-                            <p id="txtExpe2">O parque não pode ser acessado pois, 
-                            é uma area de preservação onde se concontra diversicada, 
-                            fauna e flora O parque não pode ser acessado pois,
-                             é uma area de preservação onde se concontra diversicada,
-                             fauna e floraO parque não pode ser acessado pois, é </p>
-                            <a href="/Blog/noticia/1" className="link">
-                                <button type="button" class="efeito2 efeito-3">Materia completa</button>
-                            </a>
-
-                        </div>
+                            </div>
+                        ))}
+                       
+                        
                 </div>
                 
             </div>

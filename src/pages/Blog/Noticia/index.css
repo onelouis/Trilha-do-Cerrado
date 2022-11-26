@@ -300,7 +300,10 @@ img{
     background-color: white;
 }
 
-
+.tituloNoticiasPequenas{
+    color: #323131;
+    font-size: 1vw;
+}
 
 .BackgroundMaisNoticias-secundary{
     display: flex;

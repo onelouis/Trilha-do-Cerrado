@@ -4,40 +4,78 @@
       "id": 1,
       "titulo": "Porque não pode entrar no parque nacional",
       "conteudo": "O parque não pode ser acessado pois, é uma area de preservação onde se concontra diversicada, fauna e flora O parque não pode ser acessado pois, é uma area de preservação onde se concontra diversicada, fauna e floraO parque não pode ser acessado pois, é",
-      "imagemUrl": "/imagens/noticia.png"
+      "imagemUrl": "/imagens/noticia.png",
+      "tipoNoticia": "Noticia"
     },
     {
       "id": 2,
       "titulo": "Festa dos morangos",
       "conteudo": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "imagemUrl": "https://1.bp.blogspot.com/-WVh_g5p0Igc/XWQ7Mwkn21I/AAAAAAAANls/0B0HioQX8igeesTHq41sPMHlhdRl7IEswCLcBGAs/s1600/strawberries-1452717.jpg"
+      "imagemUrl": "https://1.bp.blogspot.com/-WVh_g5p0Igc/XWQ7Mwkn21I/AAAAAAAANls/0B0HioQX8igeesTHq41sPMHlhdRl7IEswCLcBGAs/s1600/strawberries-1452717.jpg",
+      "tipoNoticia": "Artigo"
     },
     {
       "id": 3,
       "titulo": "Expedição dia 18",
       "conteudo": "O parque não pode ser acessado pois, é uma area de preservação onde se concontra diversicada, fauna e flora O parque não pode ser acessado pois, é uma area de preservação onde se concontra diversicada, fauna e floraO parque não pode ser acessado pois, é",
-      "imagemUrl": "https://brasilturis.com.br/wp-content/uploads/2020/01/13_01_20_caminhos-696x463.jpg"
+      "imagemUrl": "https://brasilturis.com.br/wp-content/uploads/2020/01/13_01_20_caminhos-696x463.jpg",
+      "tipoNoticia": "Noticia"
     },
     {
-        "id": 4,
-        "titulo": "A importancia da preservação",
-        "conteudo": "A preservação do meio ambiente refere-se ao conjunto de práticas que visam proteger a natureza das ações que provocam danos ao meio ambiente, como a poluição, a degradação das florestas, a extinção de animais e o aquecimento global. Devido ao atual modelo econômico, baseado em elevados níveis de consumo, o ser humano tem causado inúmeros prejuízos para a flora e fauna no planeta, ocasionando desequilíbrios ambientais irreversíveis. Excesso de produção de lixo, contaminação das águas dos oceanos e rios, poluição do ar, efeito estufa e mudanças climáticas são apenas alguns exemplos das consequências da degradação ambiental em curso. Em decorrência desses desequilíbrios, diversas espécies de animais estão em extinção ou correm o risco de serem extintas. Dessa forma a biodiversidade do planeta é alterada, colocando em risco o futuro das próximas gerações. Diante desse cenário, ações de preservação da natureza tornam-se indispensáveis, tanto por parte dos governantes, que devem estabelecer regras e limites para a utilização dos recursos naturais, como de cada um dos indivíduos no seu dia-a-dia. Como preservar o meio ambiente? Para a conservação da natureza e garantia da sustentabilidade é preciso que se criem normas e políticas públicas que previnam a degradação, tanto em escalas locais como ao nível internacional. Atualmente, diversos acordos e tratados internacionais são firmados entre os países com o intuito de reduzir a produção de lixo, a poluição, a emissão de gases do efeito estufa e a degradação das florestas. Um dos exemplos dessas ações é o Protocolo de Kyoto, assinado por países pertencentes à Organização das Nações Unidas com o objetivo de reduzir a emissão de gases do efeito estufa, que intensificam o aquecimento global.",
-        "imagemUrl": "https://static8.depositphotos.com/1337050/867/i/600/depositphotos_8672349-stock-photo-loving-nature.jpg"
-      
+      "id": 4,
+      "titulo": "A importancia da preservação",
+      "conteudo": "A preservação do meio ambiente refere-se ao conjunto de práticas que visam proteger a natureza das ações que provocam danos ao meio ambiente, como a poluição, a degradação das florestas, a extinção de animais e o aquecimento global. Devido ao atual modelo econômico, baseado em elevados níveis de consumo, o ser humano tem causado inúmeros prejuízos para a flora e fauna no planeta, ocasionando desequilíbrios ambientais irreversíveis. Excesso de produção de lixo, contaminação das águas dos oceanos e rios, poluição do ar, efeito estufa e mudanças climáticas são apenas alguns exemplos das consequências da degradação ambiental em curso. Em decorrência desses desequilíbrios, diversas espécies de animais estão em extinção ou correm o risco de serem extintas. Dessa forma a biodiversidade do planeta é alterada, colocando em risco o futuro das próximas gerações. Diante desse cenário, ações de preservação da natureza tornam-se indispensáveis, tanto por parte dos governantes, que devem estabelecer regras e limites para a utilização dos recursos naturais, como de cada um dos indivíduos no seu dia-a-dia. Como preservar o meio ambiente? Para a conservação da natureza e garantia da sustentabilidade é preciso que se criem normas e políticas públicas que previnam a degradação, tanto em escalas locais como ao nível internacional. Atualmente, diversos acordos e tratados internacionais são firmados entre os países com o intuito de reduzir a produção de lixo, a poluição, a emissão de gases do efeito estufa e a degradação das florestas. Um dos exemplos dessas ações é o Protocolo de Kyoto, assinado por países pertencentes à Organização das Nações Unidas com o objetivo de reduzir a emissão de gases do efeito estufa, que intensificam o aquecimento global.",
+      "imagemUrl": "https://static8.depositphotos.com/1337050/867/i/600/depositphotos_8672349-stock-photo-loving-nature.jpg",
+      "tipoNoticia": "Evento"
     },
     {
       "id": 5,
       "titulo": "Clube de motocross",
       "conteudo": "A preservação do meio ambiente refere-se ao conjunto de práticas que visam proteger a natureza das ações que provocam danos ao meio ambiente, como a poluição, a degradação das florestas, a extinção de animais e o aquecimento global. Devido ao atual modelo econômico, baseado em elevados níveis de consumo, o ser humano tem causado inúmeros prejuízos para a flora e fauna no planeta, ocasionando desequilíbrios ambientais irreversíveis. Excesso de produção de lixo, contaminação das águas dos oceanos e rios, poluição do ar, efeito estufa e mudanças climáticas são apenas alguns exemplos das consequências da degradação ambiental em curso. Em decorrência desses desequilíbrios, diversas espécies de animais estão em extinção ou correm o risco de serem extintas. Dessa forma a biodiversidade do planeta é alterada, colocando em risco o futuro das próximas gerações. Diante desse cenário, ações de preservação da natureza tornam-se indispensáveis, tanto por parte dos governantes, que devem estabelecer regras e limites para a utilização dos recursos naturais, como de cada um dos indivíduos no seu dia-a-dia. Como preservar o meio ambiente? Para a conservação da natureza e garantia da sustentabilidade é preciso que se criem normas e políticas públicas que previnam a degradação, tanto em escalas locais como ao nível internacional. Atualmente, diversos acordos e tratados internacionais são firmados entre os países com o intuito de reduzir a produção de lixo, a poluição, a emissão de gases do efeito estufa e a degradação das florestas. Um dos exemplos dessas ações é o Protocolo de Kyoto, assinado por países pertencentes à Organização das Nações Unidas com o objetivo de reduzir a emissão de gases do efeito estufa, que intensificam o aquecimento global.",
-      "imagemUrl": "http://especiais-pio.clicrbs.com.br/amadoresesporte/12/assets/images/00d385e8-2846x1894.jpg"
-    
+      "imagemUrl": "http://especiais-pio.clicrbs.com.br/amadoresesporte/12/assets/images/00d385e8-2846x1894.jpg",
+      "tipoNoticia": "Artigo"
     },
     {
       "id": 6,
       "titulo": "Perigo das queimadas",
       "conteudo": "A preservação do meio ambiente refere-se ao conjunto de práticas que visam proteger a natureza das ações que provocam danos ao meio ambiente, como a poluição, a degradação das florestas, a extinção de animais e o aquecimento global. Devido ao atual modelo econômico, baseado em elevados níveis de consumo, o ser humano tem causado inúmeros prejuízos para a flora e fauna no planeta, ocasionando desequilíbrios ambientais irreversíveis. Excesso de produção de lixo, contaminação das águas dos oceanos e rios, poluição do ar, efeito estufa e mudanças climáticas são apenas alguns exemplos das consequências da degradação ambiental em curso. Em decorrência desses desequilíbrios, diversas espécies de animais estão em extinção ou correm o risco de serem extintas. Dessa forma a biodiversidade do planeta é alterada, colocando em risco o futuro das próximas gerações. Diante desse cenário, ações de preservação da natureza tornam-se indispensáveis, tanto por parte dos governantes, que devem estabelecer regras e limites para a utilização dos recursos naturais, como de cada um dos indivíduos no seu dia-a-dia. Como preservar o meio ambiente? Para a conservação da natureza e garantia da sustentabilidade é preciso que se criem normas e políticas públicas que previnam a degradação, tanto em escalas locais como ao nível internacional. Atualmente, diversos acordos e tratados internacionais são firmados entre os países com o intuito de reduzir a produção de lixo, a poluição, a emissão de gases do efeito estufa e a degradação das florestas. Um dos exemplos dessas ações é o Protocolo de Kyoto, assinado por países pertencentes à Organização das Nações Unidas com o objetivo de reduzir a emissão de gases do efeito estufa, que intensificam o aquecimento global.",
-      "imagemUrl": "/imagens/queimada.png"
-    
+      "imagemUrl": "/imagens/queimada.png",
+      "tipoNoticia": "Noticia"
+    },
+    {
+      "titulo": "Mirella",
+      "conteudo": "Copa do mundo acaba de começar Copa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começar",
+      "imagemUrl": "https://s2.glbimg.com/uBsR0s5OVHiTMaz8jhFrVPJnRgg=/0x0:1024x683/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/I/9/Zei0H6QByVBCYkrmlIug/gettyimages-1241114873.jpg",
+      "tipoNoticia": "Evento",
+      "id": 21
+    },
+    {
+      "titulo": "",
+      "conteudo": "Copa do mundo acaba de começar Copa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começar",
+      "imagemUrl": "https://s2.glbimg.com/uBsR0s5OVHiTMaz8jhFrVPJnRgg=/0x0:1024x683/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/I/9/Zei0H6QByVBCYkrmlIug/gettyimages-1241114873.jpg",
+      "tipoNoticia": "Artigo",
+      "id": 22
+    },
+    {
+      "titulo": "",
+      "conteudo": "Copa do mundo acaba de começar Copa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começarCopa do mundo acaba de começar",
+      "imagemUrl": "https://s2.glbimg.com/uBsR0s5OVHiTMaz8jhFrVPJnRgg=/0x0:1024x683/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/I/9/Zei0H6QByVBCYkrmlIug/gettyimages-1241114873.jpg",
+      "tipoNoticia": "Noticia",
+      "id": 23
+    },
+    {
+      "titulo": "aaaaaaaaa",
+      "conteudo": "aaaaaaaaaaaa",
+      "imagemUrl": "https://s2.glbimg.com/uBsR0s5OVHiTMaz8jhFrVPJnRgg=/0x0:1024x683/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/I/9/Zei0H6QByVBCYkrmlIug/gettyimages-1241114873.jpg",
+      "tipoNoticia": "Evento",
+      "id": 27
+    },
+    {
+      "titulo": "novo evento",
+      "conteudo": "o evento de hoje é sobre ....",
+      "imagemUrl": "https://1.bp.blogspot.com/-WVh_g5p0Igc/XWQ7Mwkn21I/AAAAAAAANls/0B0HioQX8igeesTHq41sPMHlhdRl7IEswCLcBGAs/s1600/strawberries-1452717.jpg",
+      "tipoNoticia": "Evento",
+      "id": 30
     }
   ],
   "comments": [
@@ -136,58 +174,23 @@
     },
     {
       "userId": 1,
-      "comment": "oi mi ",
+      "comment": "testando",
       "id": 17
     },
     {
       "userId": 1,
-      "comment": "oi mi ",
+      "comment": "teste do json",
       "id": 18
     },
     {
       "userId": 1,
-      "comment": "marcia foifnha",
+      "comment": "",
       "id": 19
     },
     {
       "userId": 1,
-      "comment": "",
+      "comment": "oi bruna ",
       "id": 20
-    },
-    {
-      "userId": 1,
-      "comment": "pedro",
-      "id": 21
-    },
-    {
-      "userId": 1,
-      "comment": "pedro",
-      "id": 22
-    },
-    {
-      "userId": 1,
-      "comment": "",
-      "id": 23
-    },
-    {
-      "userId": 1,
-      "comment": "gislane",
-      "id": 24
-    },
-    {
-      "userId": 1,
-      "comment": "gislane",
-      "id": 25
-    },
-    {
-      "userId": 1,
-      "comment": "duplicata",
-      "id": 26
-    },
-    {
-      "userId": 1,
-      "comment": "alensmas",
-      "id": 27
     }
   ],
   "users": [

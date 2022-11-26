@@ -8,29 +8,44 @@ function Main() {
     
         <main className="main"> 
             <div className="feed">
+                <div className="parte1">
+                    <div className="seção2">
+                     
+                        <div className="quadrado">
+                            <div className="nossamarca">
+                                <h1> Nossa Marca</h1> 
+                            </div>
+                            <p>Desejamos que todos tenham acesso a natureza e possa 
+                            ver sua beleza e que essa seja a marca dessa geração.</p>
+                                <img src="/imagens/logo.png" alt="logocentral" id="locentral"/>
+                        </div>
+                    </div> 
+                </div>
                 <div className="parte2">
                     <div>
                         <div className="Retangulo"> </div>
                     </div>
                     
                         <div className="Cachoeira">
+                            <div className="blocoAmarelo4"></div>
                             <img src="/imagens/cachoeira.png" alt="cachoeira"/>
                         </div>
                 
                     
                         <div className="divisao">
                             <div className="projeto">
-                                <h1> O Projeto</h1> 
-                                
-                                <p >Os Caminhos do Planalto Central, participam da Rede Brasileira
-                                de Trilhas e integram o Caminho dos Goyazes (percurso da Cidade 
-                                de Goiás à Chapada dos Veadeiros).Compreendem um conjunto aproximado
-                                de 400 km de trilhas para caminhantes, ciclistas e cavaleiros, 
-                                com três arcos que partem de dois pontos de relevante interesse
-                                ambiental e histórico, a Floresta Nacional de Brasília e a Pedra 
-                                Fundamental no Morro do Centenário. A conexão ao Caminho dos 
-                                Goyazes acontece, a leste na Lagoa Feia em Formosa-GO e a oeste 
-                                na Barragem do Descoberto em Águas Lindas-GO.</p>
+                                <h1> CAMINHOS DO PLANALTO CENTRAL</h1> 
+                                <img src="/imagens/linha.png" alt="linha"/>
+                                <p >O CPC (Caminhos do Planalto Central) é um Sistema de 
+                                    Trilhas Ecológicas do DF.  Estes percursos serão 
+                                    destinados aos caminhantes, ciclistas, corredores, 
+                                    cavaleiros e outros interessados em desenvolver 
+                                    atividades relacionadas ao lazer, recreação, esporte, 
+                                    imersão, contemplação e conservação do ambiente,
+                                     particularmente do Planalto Central, no território 
+                                     do DF, mas sem a utilização de meios motorizados para 
+                                     locomoção. </p>
+                                    
                             </div>
                             
                         </div>
@@ -49,15 +64,26 @@ function Main() {
                         </div>
                         <div>
                         <h1> PARCEIROS</h1>
-                        <p >Para Brazlândia, ponto de início do sentido oeste/leste da trilha,
-                         é possível utilizar transporte coletivo público e chegar ao pontos 
-                         de início por via rodoviária, a partir da Rodoviária do Plano Piloto, 
-                         no centro de Brasília.</p>
-                     <p >Se a opção for fazer a trilha no sentido leste/oeste, ou seja,
-                        iniciando em Formosa-GO, é necessário utilizar o transporte rodoviário 
-                        que sai da Rodoviária Interestadual de Brasília. Histórico</p> 
-
-                        <button>Ler mais</button>
+                         <p>
+                            Concebido inicialmente com a finalidade de implantar 5 trilhas 
+                            de longo curso, o CPC interliga cidades, comunidades, paisagens, 
+                            unidades de conservação, atrativos de valor histórico, cultural e 
+                            ambiental.</p><p>Os 400km dos traçados de trilhas do CPC foram 
+                            desenhados objetivando buscar ao máximo a conexão dos atrativos
+                            . E proporcionar, dessa forma,aos visitantes uma significativa 
+                            diversidade de experiências, tanto quanto aos aspectos paisagísticos 
+                            ambientais, como aos socioculturais envolvendo a história, 
+                            as tradições culturais, a arquitetura, culinária, religiosidade,
+                             educação, aspectos cívicos e outros conforme o trilheiro tem 
+                            a oportunidade de percorrer nossas trilhas.
+                                     </p>
+                        <div className="botaovermais">
+                            <Link to="/">
+                                <button type="button" class="vermais">Ver Mais
+                                </button>
+                            </Link>  
+                        </div>
+                        
                         </div>
                         
                     </div>
@@ -69,16 +95,26 @@ function Main() {
                         </div>
                         <div>
                         <h1> REGIOES</h1>  
-                        <p >Para Brazlândia, ponto de início do sentido oeste/leste da trilha,
-                         é possível utilizar transporte coletivo público e chegar ao pontos 
-                         de início por via rodoviária, a partir da Rodoviária do Plano Piloto, 
-                         no centro de Brasília.</p>
-                     <p >Se a opção for fazer a trilha no sentido leste/oeste, ou seja,
-                        iniciando em Formosa-GO, é necessário utilizar o transporte rodoviário 
-                        que sai da Rodoviária Interestadual de Brasília. Histórico</p> 
+                        <p >Este sistema de trilhas ecológicas do DF é formado por 
+                            três arcos (Arco União, Arco Brasília e Arco Cafuringa),
+                             que se iniciam terminam em 2 pontos de relevantes interesses,
+                              a saber:  a Pedra Fundamental (marco zero do CPC) e a 
+                              Floresta Nacional de Brasília.</p> 
+                              <p > Os referidos arcos 
+                                se conectarão ao Caminhos dos Veadeiros pela 'Saída Leste’,
+                                 cujo ponto de partida é a Pedra Fundamental e segue em 
+                                 direção à  Lagoa Feia em Formosa-GO, e pela 'Saída Oeste’,
+                                  que interligará a Flona à  Brazlândia, contornando a 
+                                  Barragem do Descoberto. Em Brazlândia, o CPC se ligará à 
+                                  Rota do Rio Areias.</p> 
 
 
-                        <button>ver mais </button>
+                        <div className="botaovermais2">
+                            <Link to="/">
+                                <button type="button" class="vermais2">Ver Mais
+                                </button>
+                            </Link>  
+                        </div>
                         </div>
                         
                     </div>

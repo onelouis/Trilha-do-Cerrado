@@ -13,7 +13,6 @@ header{
     
     background-size: cover;
     background-repeat:no-repeat ;
-    
     width: 100%;
     width:calc(100vh - 300px) ;
     background-image:  url('../../../public/imagens/image1.png');
@@ -127,12 +126,13 @@ nav{
     background-color: #121212;
    
 }
-.feed{
+.feed-areauniao{
     display: flex;
     width: 100%;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
     padding: 25px;
     
     
@@ -140,76 +140,64 @@ nav{
 /*primeiros campos do site*/
 
 
-.caixa1 a{
-    color: white;
+
+.feed-areauniao{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 25px;
+    
 }
-.caixa1 a:hover{
+.areabrasilia {
+    color: #FFD600;
+    background-color:#323131; 
+    height: 200px;
+    width: 250px;
+    font-size: 30px;
+    margin: 10px;
+}
+.areabrasilia:hover{
     text-decoration: none;
-    color:#FFD600;
+    color:#323131;
+    background-color: #FFD600;
     cursor: pointer;
     transition-duration: 0.5s;
 }
-.caixa1 h1{
-    font-size: clamp(20px, 10px + 3vw, 40px);
-    color: #fff;
+.areacafuringa {
+    color: #FFD600;
+    background-color:#323131; 
+    height: 200px;
+    width: 250px;
+    font-size: 30px;
+    margin: 10px;
 }
-.caixa1 {
-    display: flex;
-    height:calc(100vh - 700px) ;
-    width:calc(100vh - -250px) ;
-    margin: 20px ;
-    left: 214px;
-    top: 687px;
-    align-items:flex-end;
-    color:#FFD600;
-    padding: 15px;
-    background-color: #323131;
-        
-
-}
-.caixa2 h1{
-    font-size: clamp(20px, 10px + 3vw, 40px);
-}
-.caixa2 {
-    display: flex;
-    height:calc(100vh - 700px) ;
-    width:calc(100vh - -250px) ;
-    margin: 20px ;
-    left: 214px;
-    top: 687px;
-    align-items:flex-end;
+.areacafuringa:hover{
+    text-decoration: none;
     color:#323131;
-    padding: 15px;
-    background-color: #323131; 
-
+    background-color: #FFD600;
+    cursor: pointer;
+    transition-duration: 0.5s;
 }
-.caixa3 h1{
-    font-size: clamp(20px, 10px + 3vw, 40px);
+.areauniao {
+    color: #FFD600;
+    background-color:#323131; 
+    height: 200px;
+    width: 250px;
+    font-size: 30px;
+    margin: 10px;
 }
-.caixa3 {
-    display: flex;
-    height:calc(100vh - 700px) ;
-    width:calc(100vh - -250px) ;
-    margin: 20px ;
-    left: 214px;
-    top: 687px;
-    align-items:flex-end;
-    color:#FFD600;
-    padding: 15px;
-    background-color: #323131;
-        
-
+.areauniao:hover{
+    text-decoration: none;
+    color:#323131;
+    background-color: #FFD600;
+    cursor: pointer;
+    transition-duration: 0.5s;
 }
 /*campo que tem o mapa e outras funcionalidades*/
-.conteudo {
-    display: flex;
-    flex-direction: row;
-    padding: 10px auto;
-    margin: 20px  ;
-    height: 100%;
-    width: 100%;
-   
-}
+
 .trilhas{
     display: flex;
     flex-direction: row;
@@ -224,31 +212,43 @@ nav{
     
 }
 .trilhas img{
-    margin-left: -1px;
+    margin-left: -40%;
+    margin-top: 20%;
     Width:150px;
     height: 2px;
     left: 65px;
     top: 1100px;
 }
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    padding: 10px auto;
+    margin: 20px  ;
+    height: 100%;
+    width: 100%;
+   
+}
 .seções{
     flex-direction: column;
     width: 530px;
     align-self: center;
+    
 }
 /*localização*/
 .Localização{
     display: flex;
     flex-wrap: wrap;    
-    margin-top: 16%;
-    
+    margin-top: 13%;
+    margin-left: 10%;
     
 }
 .Localização H1{
-    font-size: clamp(20px, 10px + 2vw, 45px);
+    font-size: clamp(35px, 10px + 2vw, 45px);
 }
 .Localização p{
-    margin-left: 16%;
+    margin-left: 13%;
     font-size: larger;
+    margin-right: 1%;
 }
 .Localização img{
     width: 50px;
@@ -259,14 +259,15 @@ nav{
 /*Dificuldade*/
 .Dificuldade{
     display: flex;
-    flex-wrap: wrap;  
-    margin-top: 16%;
+    flex-wrap: wrap;    
+    margin-top: 13%;
+    margin-left: 10%; 
 }
 .Dificuldade H1{
-    font-size: clamp(20px, 10px + 2vw, 45px);
+    font-size: clamp(35px, 10px + 2vw, 45px);
 }
 .Dificuldade p{
-    margin-left: 16%;
+    margin-left: 13%;
     font-size:large;
 }
 .Dificuldade img{
@@ -278,14 +279,15 @@ nav{
 /*Distancia*/
 .Distancia{
     display: flex;
-    margin-top: 16%;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;    
+    margin-top: 13%;
+    margin-left: 10%;
 }
 .Distancia H1{
-    font-size: clamp(20px, 10px + 2vw, 45px);
+    font-size: clamp(35px, 10px + 2vw, 45px);
 }
 .Distancia p{
-    margin-left: 16%;
+    margin-left: 13%;
     font-size:large;
 }
 .Distancia img{
@@ -362,14 +364,15 @@ nav{
     padding-top: 0px;
     margin-right: 240px;
     margin-left: -0.1%;
+    height: 0.15vw;
     width: 100px;
     width: 100%;
     
 }
 .linha img{
-    margin-top: 142px; 
-    height: 2px;
-    margin-right: 270px;
+    margin-top: 150px; 
+    height: 0.15vw;
+    width: 100px;
     margin-left: -0.2%;
     width: 100%;
     
@@ -422,12 +425,12 @@ nav{
 
 }
 /*Rodapé*/
-.footer{
+.footer-Home{
     background-color: #323131;
     width: 100%;
     height: 100%;
     height: 366px;
-    font-size: clamp(0.5rem, 0.8rem + 1vw, 2rem);
+    font-size: clamp(0.5rem, 0.8rem + 1vw, 1rem);
     justify-content: space-evenly;
     
 }
@@ -446,22 +449,23 @@ nav{
     display: flex;
     justify-content: center;
 }
-.icones li{
-    color:white
+.icones-Home li{
+    color:white;
+    margin-left: 10px;
 }
-.icones li:hover{
+.icones-Home li:hover{
     text-decoration: none;
     color:#FFD600;
     cursor: pointer;
     transition-duration: 0.5s;
 }
 /*Icones*/
-.icones{
+.icones-Home{
     font-size: 30px;
     list-style-type: none;
     display: flex;
     padding: 0;
-    margin: 0;
+    margin: 5px;
     justify-content:center;
     align-items: center;
 
@@ -476,49 +480,7 @@ nav{
         width: 100%;
         height: 100%;
       }
-      .caixa1 {
-        display: flex;
-        height:calc(100vh - 550px) ;
-        width:calc(100vh - -150px) ;
-        margin: 20px ;
-        left: 214px;
-        top: 687px;
-        align-items:flex-end;
-      
-        padding: 15px;
-        
-        
-    
-    }
-    .caixa2 {
-        display: flex;
-        height:calc(100vh - 550px) ;
-        width:calc(100vh - -150px) ;
-        margin: 20px;
-        left: 214px;
-        top: 687px;
-        margin: 20px ;
-        
-        align-items:flex-end;
-        margin: auto;
-        padding: 15px;
-        
-        
-    
-    }
-    .caixa3 {
-        display: flex;
-        height:calc(100vh - 550px) ;
-        width:calc(100vh - -150px) ;
-        margin: 20px ;
-        left: 214px;
-        top: 687px;
-        align-items:flex-end;
-      
-        padding: 15px;
- 
-        
-    }
+     
     
     
     
@@ -546,50 +508,8 @@ nav{
         margin: 1% auto ;
         align-items:flex-end;
     }
-    .caixa1 {
-        display: flex;
-        height:calc(100vh - 500px) ;
-        width:calc(100vh - -150px) ;
-        margin: 20px ;
-        left: 214px;
-        top: 687px;
-        align-items:flex-end;
-        
-        padding: 15px;
-        
-        
     
-    }
-    .caixa2 {
-        display: flex;
-        height:calc(100vh - 500px) ;
-        width:calc(100vh - -150px) ;
-        margin: 20px;
-        left: 214px;
-        top: 687px;
-        margin: 20px ;
-        
-        align-items:flex-end;
-        margin: auto;
-        padding: 15px;
-        
-        
     
-    }
-    .caixa3 {
-        display: flex;
-        height:calc(100vh - 500px) ;
-        width:calc(100vh - -150px) ;
-        margin: 20px ;
-        left: 214px;
-        top: 687px;
-        align-items:flex-end;
-        
-        padding: 15px;
-        
-        
-    
-    }
     .amarela p{
         width: 100%;
         height: 100%;
@@ -632,64 +552,32 @@ nav{
         padding: 25px;
         
     }
-    .mapa{
-        
-        display: flex;
-        height:calc(100vh - 300px) ;
-        width:calc(100vh - -100px) auto;
-        left: 214px;
-        top: 687px;
-        margin: 20px ;
-        align-items:flex-end;
     
+    .trilhas img{
+        margin-left: -40%;
+        margin-top: 20%;
+        Width:100px;
+        height: 2px;
+        left: 65px;
+        top: 1100px;
     }
-    
-    .caixa1 {
-        display: flex;
-        height:calc(100vh - 500px) ;
-        width:calc(100vh - -150px) ;
-        margin: 20px ;
-        left: 214px;
-        top: 687px;
-        align-items:flex-end;
+    .imagem img{
+        padding-top: 0px;
+        margin-right: 50px;
+        margin-left: -0.1%;
+        height: 0.15vw;
+        width: 100px;
+        width: 100%;
         
-        padding: 15px;
-        
-        
-    
     }
-    .caixa2 {
-        display: flex;
-        height:calc(100vh - 500px) ;
-        width:calc(100vh - -150px) ;
-        margin: 20px;
-        left: 214px;
-        top: 687px;
-        margin: 20px ;
+    .linha img{
+        margin-top: 150px; 
+        height: 0.05vw;
+        width: 100px;
+        margin-left: -0.2%;
+        width: 100%;
         
-        align-items:flex-end;
-        margin: auto;
-        padding: 15px;
-        
-        
-    
     }
-    .caixa3 {
-        display: flex;
-        height:calc(100vh - 500px) ;
-        width:calc(100vh - -150px) ;
-        margin: 20px ;
-        left: 214px;
-        top: 687px;
-        align-items:flex-end;
-        
-        padding: 15px;
-        
-        
-    
-    }
-  
-    
   }
 @media screen and (max-width: 480px) {
     .header {
@@ -765,49 +653,6 @@ nav{
         
     }
    
-    .caixa1 {
-        display: flex;
-        height:calc(100vh - 500px) ;
-        width:calc(100vh - -150px) ;
-        margin: 20px ;
-        left: 214px;
-        top: 687px;
-        align-items:flex-end;
-        
-        padding: 15px;
-        
-        
     
-    }
-    .caixa2 {
-        display: flex;
-        height:calc(100vh - 500px) ;
-        width:calc(100vh - -150px) ;
-        margin: 20px;
-        left: 214px;
-        top: 687px;
-        margin: 20px ;
-        
-        align-items:flex-end;
-        margin: auto;
-        padding: 15px;
-        
-        
-    
-    }
-    .caixa3 {
-        display: flex;
-        height:calc(100vh - 500px) ;
-        width:calc(100vh - -150px) ;
-        margin: 20px ;
-        left: 214px;
-        top: 687px;
-        align-items:flex-end;
-        
-        padding: 15px;
-        
-        
-    
-    }
   }
 }

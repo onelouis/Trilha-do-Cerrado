@@ -8,7 +8,7 @@
 }
 
 .Principal{
-    width: 99vw;
+    width: 98vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -50,17 +50,14 @@
 .noticiaP{
     position: absolute;
     display: flex;
+    flex-direction: column;
     width: 35%;
     height: 100%;
     right: 0px;
 }
 
-.np1{
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 33.3%;
-
+.noticiaPNoticias{
+   display: flex;
 }
 
 #tit{
@@ -69,14 +66,7 @@
     font-size: 2vw;
     margin-left: 15px;
     margin-top: 4%;
-}
-
-#tita{
-    color:#E7CD10;
-    font-size: 2vw;
-    margin-left: 2%;
-    margin-top: 4%;
-
+    margin-bottom: 30px;
 }
 
 #text{
@@ -97,16 +87,25 @@
     font-family: Inter ;
 }
 
-#news2{
-    position: absolute;
-    width: 14vw;
-    height: 25vh;
-    top: 35%;
+.newsPrincipaisPequenas{
+    width: 13vw;
+    height: 23vh;
     margin-left: 7px;
+    margin-bottom: 20px;
     object-fit: cover;
     
 }
 
+.linkNoticiasPrincipaisPequenas{
+    text-decoration: none;
+    padding: 15px;
+}
+
+.tituloNoticiasPequenas{
+    color: #323131;
+    font-size: 1vw;
+    margin-bottom: 10px;
+}
 #titulo2{
     position: absolute;
     color: black;
@@ -119,65 +118,16 @@
 #news3{
     object-fit: cover;
 }
-#text3{
-    position: absolute;
+.text3{
     color: black ;
-    top: 80%;
-    left: 48%;
     font-family: Inter ;
-    font-size: 1.2vh;
-}
-
-
-.np2{
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 33.4%;
-    top: 33.3%;
-}
-
-#news3{
-    position: absolute;
-    width: 14vw;
-    height: 25vh;
-    top: 25%;
-    margin-left: 7px;
-}
-
-.np3{
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 33.3%;
-    bottom: 0;
-}
-
-#news4{
-    position: absolute;
-    width: 14vw;
-    height: 25vh;
-    top: 15%;
-    margin-left: 7px;
-}
-
-#text4{
-    position: absolute;
-    color: black ;
-    top: 30%;
-    left: 48%;
-    font-size: 1vw;
-
-    font-family: Inter ;
-}
-
-#text5{
-    position: absolute;
-    color: black ;
-    top: 50%;
-    left: 48%;
-    font-family: Inter ;
-    font-size: 1.2vh;
+    font-size: 1.6vh;
+    text-align: justify;
+    overflow: hidden;
+    padding: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
 }
 
 .fundo{
@@ -364,6 +314,11 @@
     font-size: 1.1vw;
     text-align: justify;
     padding: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    
 }
 
 #queimadas{
@@ -409,6 +364,10 @@
     font-size: 1.1vw;
     text-align: justify;
     padding: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
 }
 
 #explorar{
@@ -461,4 +420,17 @@
     top: 5%;
     left: 4%;
     background-color: #FFD600;
+}
+
+.BlogAdicionarNovasMaterias{
+    background-color: #ffd700;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    padding: 12px 36px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 16px;
 }

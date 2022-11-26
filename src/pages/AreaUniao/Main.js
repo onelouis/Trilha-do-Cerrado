@@ -2,26 +2,33 @@ import React from "react";
 import {Link} from 'react-router-dom' 
 
 
+
 function Main() {
 
     return ( 
     
         <main className="main"> 
-            <div className="feed">
-                <div className="caixa1">
-                    
-                    <h1>
-                        <Link to="/AreaBrasilia">Area Brasilia</Link>
-                    </h1>
-                </div>
-                <div className="caixa2">
-                    <h1> 
-                        <Link to="/">Area Cafuringa</Link>
-                    </h1>  
-                </div>
-                <div className="caixa3">
-                    <h1> <Link to="/AreaUniao">Area União</Link>    </h1>    
-                </div>
+            <div className="feed-areauniao">
+                
+                    <div className="botao1">
+                        
+                         <Link to="/AreaBrasilia">
+                            <button type="button" class="areabrasilia ">Area Brasilia
+                            </button>
+                        </Link>
+                    </div>
+                    <div className="botao2">
+                        <Link to="/">
+                            <button type="button" class="areacafuringa">Area Cafuringa
+                            </button>
+                        </Link> 
+                    </div>
+                    <div className="botao3">
+                        <Link to="/AreaUniao">
+                            <button type="button" class="areauniao">Area União
+                            </button>
+                        </Link>  
+                    </div>
             </div>
             <div className="trilhas">
                 <b> Trilhas<img src="/imagens/linha.png" alt="linha"/></b> 
@@ -30,15 +37,15 @@ function Main() {
                 <div className="seções">
                     <div className="Localização">
                         <img src="/imagens/vetor.png" alt="vetor" /><h1> Localização</h1>
-                        <p>O arco cafuringa fica localizado na região de</p>
+                        <p>O trajeto iniciasse na pedra fundamental de Brasília e compoem regiões como o Parque Nacional de Brasilia, Floresta Nacional de Brasilia entre outros.</p>
                     </div>
                     <div className="Dificuldade">
                          <img src="/imagens/grafico.png" alt="grafico" /><h1> Dificuldade</h1>  
-                         <p>O arco cafuringa fica localizado na região de</p>
+                         <p>Diversidade de TopoGrafia. </p>
                     </div>
                     <div className="Distancia">
                          <img src="/imagens/distancia.png" alt="distancia" /><h1> Distancia</h1> 
-                         <p>O arco cafuringa fica localizado na região de</p>   
+                         <p>Trilha com a distancia de 80 Km</p> 
                     </div>
                 </div>
                 <div >
@@ -63,11 +70,12 @@ function Main() {
                         </div>     
                 </div>
                 <div className="amarela">
-                    <p >Com seus 150km, este arco se destaca no aspecto ambiental e 
-                        na cultura rural, religiosa e histórica da ocupação do nosso 
-                        território. Percorre ampla região com diversos atrativos naturais e os atributos 
-                        do Cerrado apresentam-se bem preservados. De topografia variada proporciona belas 
-                        paisagens e da mesma forma, conecta várias Unidades de Conservação.</p>
+                    <p >rajeto de 80km com rico valor paisagístico, 
+                        cultural, místico e gastronômico. É possível 
+                        encontrar no percurso diversos espaços para 
+                        vivência espiritual, boa alimentação e contato 
+                        com manifestações culturais. Aqui o público 
+                        encontrará a Torre Digital: símbolo dos Caminhos do Planalto Centra</p>
                     <img src="/imagens/image 3.png" alt="imagem 3"/>
                     
                 </div>

@@ -7,7 +7,7 @@ function Main() {
     return ( 
     
         <main className="main"> 
-            <div className="feed">
+            <div className="feedsobre">
                 <div className="caixa1">
                     
                     <h1>

@@ -127,14 +127,15 @@ nav{
     background-color: #121212;
    
 }
-.feed{
+.feedsobre{
     display: flex;
     width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 25px;
-    
+    flex-wrap: wrap;
+
     
 }
 /*primeiros campos do site*/

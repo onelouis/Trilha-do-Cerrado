@@ -13,7 +13,9 @@ function Header() {
                                 <li>
                                     <Link to="/">INICIO</Link>
                                 </li>
-                                <li><a>BLOG</a></li>
+                                <li> 
+                                    <Link to="/Blog">BLOG</Link>
+                                </li>
                                 <li>
                                     <Link to="/Sobre">SOBRE</Link>
                                 </li>
