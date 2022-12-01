@@ -24,10 +24,7 @@ const UserCard = ({avatarUrl, name, comment, onClick2}) => {
                     className="BlogComentario-botao">
                     Comentar
                 </button> 
-                <button
-                    className="blogBtnArvoreComentarios"
-                    onClick={onClick2}>
-                comentarios</button>
+            
                
             </div>
         </div>

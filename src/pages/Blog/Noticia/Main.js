@@ -10,7 +10,7 @@ import useApi from "../../Utils/useApi";
 function Main (){
     const [isModalVisible, setIsModalVisible, noticiaId] = useState(false);
     const commentsTree = useRef(null)
-    const onClick2 = () => setIsActive(!isActive)
+    const onClick2 = () => setIsActive(!isActive) //funcionalidade para sub comentários 
     const [isActive, setIsActive] = useState(false)
     const params = useParams();
     
@@ -213,19 +213,7 @@ function Main (){
                                         <div className="BlogFundoComentario">
                                             <p>{item.comment}</p>
                                         </div>
-                                        <textarea 
-                                            type='text'  
-                                            placeholder='comentar' 
-                                            className="BlogCaixa-Comentario">
-                                        </textarea>
-                                        <button 
-                                            className="BlogComentario-botao">
-                                            Comentar
-                                        </button> 
-                                        <button
-                                            className="blogBtnArvoreComentarios"
-                                            onClick={onClick2}>
-                                        comentarios</button>
+                                       
                                         
                                     </div>
                                 </div>

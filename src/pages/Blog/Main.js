@@ -3,13 +3,12 @@ import BlogNoticiaModal from "./Noticia/Modal/Modal";
 import BlogNovaMateria from "./BlogNovaMateria/BlogNovaMateria";
 import CommentNews from "./Noticia/CommentNews/CommentNews";
 import useApi from "../Utils/useApi";
-import { Select } from "@chakra-ui/react";
 
 function Main(){
     const [isModalVisible, setIsModalVisible, noticiaId] = useState(false);
     const [tipoNoticia, setTipoNoticia] = useState(() =>{
         return 'Noticia'});
-    
+    const [cor, setCor] = useState();
     
     
     const [load_news,loadnews] = useApi ({
@@ -25,11 +24,32 @@ function Main(){
     if (!loadnews.data){
         return <div>Carregando</div>
     }
-
-    function alterar(tipo){
-        load_news();
-        return setTipoNoticia(tipo)
+    
+    
+    const alterar = (tipo, cor) => {
+        setTipoNoticia(tipo)
+        setCor(cor)
         
+        if (tipo === 'Evento'){
+            
+            document.querySelector('#eventos').style.backgroundColor='#FFD600'
+            document.querySelector('#artigos').style.backgroundColor='#4B4B4B'
+            document.querySelector('#noticias').style.backgroundColor='#4B4B4B'
+
+
+        } if (tipo === 'Artigo'){
+
+            document.querySelector('#eventos').style.backgroundColor='#4B4B4B'
+            document.querySelector('#artigos').style.backgroundColor='#FFD600'
+            document.querySelector('#noticias').style.backgroundColor='#4B4B4B'
+
+        }if (tipo === 'Noticia'){
+            
+            document.querySelector('#eventos').style.backgroundColor='#4B4B4B'
+            document.querySelector('#artigos').style.backgroundColor='#4B4B4B'
+            document.querySelector('#noticias').style.backgroundColor='#FFD600'
+
+        }
     }
 
     function carregaNoticias(){
@@ -114,27 +134,20 @@ function Main(){
                 
             </div>
 
-            <div className="barra">
-                <div className="eventos"  >
-                    <button onClick={() => alterar('Evento')}>
+            <div className="barra" id="barra">
+                <div className="eventos" id="eventos" onClick={() => alterar('Evento')}>
                     <img src="/imagens/Vector.png" id="vector"></img>
                     <p id="txtbarra">Eventos</p>
-                    </button>
-                    <h3>{tipoNoticia}</h3>
                 </div>
 
-                <div className="artigos">
-                    <button onClick={() => alterar('Artigo')}>
+                <div className="artigos" id='artigos' onClick={() => alterar('Artigo')}>
                         <img src="/imagens/Vector2.png" id="vector2"></img>
                         <p id="txtbarra">Artigos</p>
-                    </button>
                 </div>
 
-                <div className="noticias">
-                <button onClick={() => alterar('Noticia')}>
+                <div className="noticias" id='noticias' onClick={() => alterar('Noticia')}>
                     <img src="/imagens/Vector3.png" id="vector3"></img>
                     <p id="txtbarra">Noticias</p>
-                </button>
                 </div>
 
             </div>

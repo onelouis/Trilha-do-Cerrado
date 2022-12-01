@@ -12,15 +12,7 @@ const Card = ({id,imagemUrl, nome, comment}) => {
                     <div className="BlogFundoComentario">
                         <p>{comment}</p>
                     </div>
-                    <textarea 
-                        type='text'  
-                        placeholder='comentar' 
-                        className="BlogCaixa-Comentario">
-                  </textarea>
-                  <button 
-                    className="BlogComentario-botao">
-                    Comentar
-                  </button> 
+                    
                                         
                 </div>
             </div>
