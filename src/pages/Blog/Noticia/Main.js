@@ -27,29 +27,18 @@ function Main (){
         }
     });
 
-
+    function ids(id){
+        console.log(id)
+    }
     
     useEffect(() => {
         load(); load_news();
     }, []);
 
-//    function carregaBlogMaisNoticias(val){
-//        {loadnews.data
-//            .filter(function(carrega){ 
-//                return carrega.id === val;   
-//            }) 
-//            .map((item) => 
-//                (
- //                   <CommentNews
- //                       imagemUrl = {item.imagemUrl}
- //                       titulo = {item.titulo}
-  //                      conteudo = {item.conteudo}
-  //                  ></CommentNews>
-  //              )
-   //             )
-   //     }
-   // }
-   
+    const recarregaModal = (falso) => {
+        setIsModalVisible(falso)
+        load()
+    }
 
     if (!loadInfo.data){
         return <div>Carregando</div>
@@ -197,7 +186,7 @@ function Main (){
                         onClick={ () => setIsModalVisible(true)}>
                         Novo comentário
                     </button>
-                    {isModalVisible ? (<BlogNoticiaModal onClose={() => setIsModalVisible(false)}>
+                    {isModalVisible ? (<BlogNoticiaModal onClose={() => recarregaModal(false)}>
                                     <NoticiasModal noticiaId={noticiaId}></NoticiasModal></BlogNoticiaModal>) : null}
                                                             
                 </div>
@@ -212,13 +201,15 @@ function Main (){
                                         <span>{item.user.name}</span>
                                         <div className="BlogFundoComentario">
                                             <p>{item.comment}</p>
+                                            <button onClick={() => ids(item.id)}>Resposta</button>
                                         </div>
                                        
                                         
                                     </div>
                                 </div>
-                                <div className={`tree ${isActive ? "active" : "inactive" }`} ref={commentsTree}></div>
-         
+                                <div className={`tree ${isActive ? "active" : "inactive" }`} ref={commentsTree}>
+                                    <h3>AAAAA</h3>
+                                </div>
                             </div>
                             
                         ))} 

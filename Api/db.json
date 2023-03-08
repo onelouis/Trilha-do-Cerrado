@@ -76,6 +76,13 @@
       "imagemUrl": "https://1.bp.blogspot.com/-WVh_g5p0Igc/XWQ7Mwkn21I/AAAAAAAANls/0B0HioQX8igeesTHq41sPMHlhdRl7IEswCLcBGAs/s1600/strawberries-1452717.jpg",
       "tipoNoticia": "Evento",
       "id": 30
+    },
+    {
+      "titulo": "Brasil na copa ",
+      "conteudo": "Classificado, o Brasil encara Camarões para garantir a liderança do grupo sem depender de outros resultados. Preocupado com a próxima fase, o técnico Tite irá poupar seus principais jogadores e também dará rodagem para quem ainda não teve oportunidade de estrear na Copa. Camarões, por outro lado, encara a partida como o jogo da vida. Uma vitória com muitos gols pode classificar a seleção africana pelo saldo de gols.\n\nA outra partida do grupo será entre Suíça e Sérvia. As equipes, que possuem uma rivalidade fora das quatro linhas por questões políticas, precisam da vitória para avançar. A Suíça garante a vaga na próxima vaga apenas com uma vitória simples. Já a Sérvia precisa vencer e torcer por uma derrota de Camarões para não depender dos critérios de desempate.",
+      "imagemUrl": "https://classic.exame.com/wp-content/uploads/2022/11/52524055501_d761a5c489_o.jpg?quality=70&strip=info&w=1024",
+      "tipoNoticia": "Artigo",
+      "id": 31
     }
   ],
   "comments": [
@@ -196,6 +203,41 @@
       "userId": 1,
       "comment": "teste ",
       "id": 21
+    },
+    {
+      "userId": 1,
+      "comment": "recarregamento de páginas\n",
+      "id": 22
+    },
+    {
+      "userId": 1,
+      "comment": "recarregamento\n",
+      "id": 23
+    },
+    {
+      "userId": 1,
+      "comment": "rrrr",
+      "id": 24
+    },
+    {
+      "userId": 1,
+      "comment": "aaaaaaa",
+      "id": 25
+    },
+    {
+      "userId": 1,
+      "comment": "a",
+      "id": 26
+    },
+    {
+      "userId": 1,
+      "comment": "luizzzzz",
+      "id": 27
+    },
+    {
+      "userId": 1,
+      "comment": "",
+      "id": 28
     }
   ],
   "users": [

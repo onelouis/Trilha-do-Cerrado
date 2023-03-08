@@ -11,7 +11,7 @@ function Main(){
     const [cor, setCor] = useState();
     
     
-    const [load_news,loadnews] = useApi ({
+    const [load_news, loadnews] = useApi ({
         url: '/noticias',
         params:{
         }
@@ -20,11 +20,11 @@ function Main(){
     useEffect(() => {
         load_news();
     }, []);
-
+    
     if (!loadnews.data){
+        console.log(loadnews.data)
         return <div>Carregando</div>
     }
-    
     
     const alterar = (tipo, cor) => {
         setTipoNoticia(tipo)
@@ -107,7 +107,7 @@ function Main(){
                                             <div>
                                                 <img className="newsPrincipaisPequenas" src={item.imagemUrl}></img>
                                             </div>
-                                            <a href="/Blog/noticia/2" className="linkNoticiasPrincipaisPequenas">
+                                            <a href={"/Blog/noticia/"+ item.id} className="linkNoticiasPrincipaisPequenas">
                                                 <strong><p className="tituloNoticiasPequenas">{item.titulo}</p></strong>
                                                 <p className="text3">{item.conteudo}</p>
                                             </a>
@@ -121,7 +121,7 @@ function Main(){
                                     return carrega.id === 1;   
                             }).map((item) =>
                                 (  
-                                <a href="/Blog/noticia/1" className="link">
+                                <a href={"/Blog/noticia/"+ item.id} className="link">
                                     <div className="noticiaG">
                                         <img src={item.imagemUrl} id="news"></img>
                                         <p id="text">{item.titulo}</p>
@@ -177,8 +177,10 @@ function Main(){
                     
                     {loadnews.data
                         .filter(function(carrega){
-                            return  tipoNoticia === carrega.tipoNoticia
-                        }).map((item) =>(
+
+                            return  tipoNoticia === carrega.tipoNoticia 
+                        }).slice(1, -1) 
+                        .map((item) =>(
                             <div className="menorS">
                                 <div className="blocoAmarelo2"></div>
                                 <img src={item.imagemUrl} id="explorar"></img>
@@ -193,8 +195,9 @@ function Main(){
                     {loadnews.data
                         .filter(function(carrega){
                         
-                            return  carrega.id === 1
-                        }).map((item) =>(
+                            return  tipoNoticia === carrega.tipoNoticia 
+                        }).slice(1, -2) 
+                        .map((item) =>(
                             <div className="menorI">
                                 <div className="blocoAmarelo3"></div>
                                 <img src={item.imagemUrl} id="noti"></img>

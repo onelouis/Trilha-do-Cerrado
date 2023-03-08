@@ -8,6 +8,7 @@ export const NoticiasModalCommentsTree = (el, initialState) => {
         const onClick = e => {
             if (el.current !== null && !el.current.contains(e.taget)){
                 setIsActive(!isActive)
+                
             }
         }
 
@@ -23,6 +24,7 @@ export const NoticiasModalCommentsTree = (el, initialState) => {
     }, [isActive, el])
     return(
         [isActive, setIsActive]
+        
     )
 }
 
